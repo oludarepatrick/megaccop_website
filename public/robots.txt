@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /dashboard
+Disallow: /admin
+Allow: /
+Sitemap: "https://megacoop.org/sitemap.xml
