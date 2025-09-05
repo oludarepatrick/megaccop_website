@@ -1,0 +1,41 @@
+.scrollContainer {
+  display: flex;
+  gap: 1.5rem;
+  overflow-x: auto!important;
+  padding-bottom: 1rem;
+  scroll-snap-type: x mandatory;
+}
+
+.scrollContainer::-webkit-scrollbar {
+  height: 6px;
+}
+
+.scrollContainer::-webkit-scrollbar-track {
+  background: hsl(var(--muted));
+  border-radius: 3px;
+}
+
+.scrollContainer::-webkit-scrollbar-thumb {
+  background: hsl(var(--muted-foreground));
+  border-radius: 3px;
+}
+
+.featureCard {
+  flex: 0 0 300px;
+  /* padding: 1.5rem; */
+  scroll-snap-align: start;
+}
+
+@media (min-width: 768px) {
+  .scrollContainer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    overflow-x: visible;
+    gap: 2rem;
+  }
+
+  .featureCard {
+    flex: none;
+    
+  }
+}
