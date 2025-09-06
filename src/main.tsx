@@ -1,10 +1,9 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import './index.css'
-import App from './App.tsx'
-import { createHead, UnheadProvider } from '@unhead/react/client'
-import { defaultSEO } from '@components/lib/seo.ts'
-
+import { StrictMode } from "react";
+import { createRoot } from "react-dom/client";
+import "./index.css";
+import App from "./App.tsx";
+import { createHead, UnheadProvider } from "@unhead/react/client";
+import { defaultSEO } from "./lib/seo.ts";
 
 const head = createHead();
 
@@ -16,12 +15,12 @@ head.push({
     { property: "og:url", content: defaultSEO.url },
     { name: "twitter:card", content: "summary_large_image" },
   ],
-})
+});
 
-createRoot(document.getElementById('root')!).render(
+createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <UnheadProvider head={head}>
       <App />
     </UnheadProvider>
-  </StrictMode>,
-)
+  </StrictMode>
+);

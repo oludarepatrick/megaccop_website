@@ -1,4 +1,4 @@
-import { Card } from "@components/components/ui/card"
+import { Card } from "../ui/card";
 import styles from "./FeaturesCard.module.css"
 import { motion } from "framer-motion"
 

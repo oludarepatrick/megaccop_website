@@ -2,8 +2,8 @@ import React from "react"
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 import { ChevronRight, Check, CircleCheck } from "lucide-react"
 import styles from "./ServiceGrid.module.css"
-import { Card } from "@components/components/ui/card"
-import { Button } from "@components/components/ui/button"
+import { Card } from "../ui/card"
+import { Button } from "../ui/button"
 import { motion, type Variants } from "framer-motion"
 
 const services = [
@@ -101,7 +101,7 @@ export default function ServiceGrid() {
           <div className="flex items-center gap-2 mb-4">
             <span className="text-orange-400 text-sm font-medium bg-orange-100 p-1 rounded">✦ Our Services</span>
           </div>
-          <h2 className="text-4xl font-bold text-balance">Financial Solutions That Fit Your Everyday Life</h2>
+          <h2 className="text-4xl lg:w-[55%] font-bold ">Financial Solutions That Fit Your Everyday Life</h2>
         </motion.div>
         {/* Grid Container */}
         <motion.div

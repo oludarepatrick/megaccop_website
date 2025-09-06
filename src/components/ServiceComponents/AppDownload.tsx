@@ -1,8 +1,7 @@
 import appStoreBlack from "../../assets/App-Store-Black.png";
 import googlePlayBlack from "../../assets/Google-Play-Black.png";
-
-import { Button } from "@components/components/ui/button"
 import { motion } from "framer-motion"
+import { Button } from "../ui/button";
 // import { Apple, Play } from "lucide-react"
 
 export default function AppDownload() {

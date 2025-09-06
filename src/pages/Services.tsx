@@ -1,7 +1,7 @@
 import { useHead } from "@unhead/react";
-import FeatureCards from "@components/ServiceComponents/FeaturesCard";
-import ServiceGrid from "@components/ServiceComponents/ServiceGrids";
-import AppDownload from "@components/ServiceComponents/AppDownload";
+import FeatureCards from "@/components/ServiceComponents/FeaturesCard";
+import ServiceGrid from "@/components/ServiceComponents/ServiceGrids";
+import AppDownload from "@/components/ServiceComponents/AppDownload";
 import { motion } from "framer-motion";
 
 const Services = () => {
@@ -9,7 +9,7 @@ const Services = () => {
 
     return(
         
-      <div className="min-h-screen bg-background flex flex-col">
+      <div className="min-h-screen bg-background flex flex-col mx-auto lg:pl-8 md:pl-12 px-4">
         <motion.h2
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
