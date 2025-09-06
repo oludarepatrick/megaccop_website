@@ -39,7 +39,7 @@ const Benefits = () => {
                     Simple, Swift, and Secure, Why You Should Choose Us
                 </h2>
             </div>
-            <ul className=" max-w-[1280px] mx-auto py-30 flex gap-10 justify-between items-center flex-wrap">
+            <ul className=" max-w-[1280px] mx-auto py-20 flex gap-10 justify-between items-center flex-wrap">
                 {benefitLists.map((list, index) => (
                     <li key={index} className="lg:max-w-[242px] w-full flex flex-col gap-2 items-center lg:items-start lg:text-left text-center">
                         <figure className="flex flex-none items-center justify-center mt-1 w-15 h-15 bg-[#F6F2FD] rounded-full">
