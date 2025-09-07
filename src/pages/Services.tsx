@@ -2,7 +2,6 @@ import { useHead } from "@unhead/react";
 import { motion } from "framer-motion";
 import FeatureCards from "@/components/ServiceComponents/FeaturesCard";
 import ServiceGrid from "@/components/ServiceComponents/ServiceGrids";
-// import AppDownload from "@/components/ServiceComponents/AppDownload";
 import Download from "@/components/Download";
 
 
@@ -30,7 +29,6 @@ const Services = () => {
         </motion.p>
       <FeatureCards />
       <ServiceGrid />
-        {/* <AppDownload /> */}
         <Download />
     </div>
     )
