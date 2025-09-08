@@ -1,6 +1,6 @@
 import { useHead } from "@unhead/react";
 import ReCAPTCHA from "react-google-recaptcha";
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { motion, type Variants } from "framer-motion";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
@@ -21,7 +21,7 @@ const contactSchema = z.object({
   phone: z
     .string()
     .min(7, "Please enter a valid phone number")
-    .max(20, "Phone number too long"),
+    .max(16, "Phone number too long"),
   message: z.string().min(10, "Message must be at least 10 characters"),
 });
 
@@ -67,7 +67,11 @@ export default function Contact() {
   
   const onCaptchaChange = (token: string | null) => {
   setCaptchaToken(token);
-};
+  };
+  
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   const onSubmit = async (data: ContactFormData) => {
     if (!captchaToken) {

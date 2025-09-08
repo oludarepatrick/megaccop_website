@@ -107,9 +107,9 @@ export default function ServiceGrid() {
         <motion.div
           className={styles.serviceGrid}
           variants={containerVariants}
-          initial="hidden"
+          initial="show"
           whileInView="show"
-          viewport={{ once: false, amount: 0.2 }}
+          viewport={{ once: true, amount: 0.2 }}
         >
                   {services.map((service) => (
               <motion.div key={service.id} variants={cardVariants}>
@@ -117,10 +117,9 @@ export default function ServiceGrid() {
               <motion.div
                   initial={{ scale: 0 }}
                   animate={{ scale: 1 }}
-                  transition={{ duration: 0.5, delay: 0.3 }}
+                  transition={{ duration: 0.1, delay: 0.1 }}
                   className="flex items-center justify-center w-12 h-12 bg-violet-50 rounded-full mb-4"
                 >
-                {/* <CircleCheck className="w-6 h-6 text-green-600" /> */}
                       <img
                     src="src/assets/secure.png"
                     alt="Check Icon"
