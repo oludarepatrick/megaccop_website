@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
+import { Button } from "./ui/button";
 
 export default function ContactSection() {
   const [email, setEmail] = useState("");
@@ -32,22 +33,23 @@ export default function ContactSection() {
   };
 
   return (
-    <section className="w-full">
+    <section className="w-full bg-[#F9FAFB] relative py-16 pb-0">
       {/* Contact Info */}
+      <p className="text-gray-600 px-6">Contact Info</p>
       <motion.div
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
         viewport={{ once: true }}
-        className="max-w-7xl mx-auto px-6 py-16 grid grid-cols-1 md:grid-cols-3 gap-12 bg-white relative z-10"
+        className="max-w-7xl mx-auto px-6 py-16 pt-4 grid grid-cols-1 md:grid-cols-3 gap-12 bg-white relative z-10"
       >
         {/* Left Heading */}
         <div>
-          <p className="text-gray-600 mb-3">Contact Info</p>
+          {/* <p className="text-gray-600 mb-3">Contact Info</p> */}
           <h2 className="text-3xl md:text-4xl font-extrabold leading-snug text-black">
             We are always <br /> happy to assist you
           </h2>
-        </div>
+       </div>
 
         {/* Email */}
         <div>
@@ -93,25 +95,26 @@ export default function ContactSection() {
 
           {/* Input Form */}
           <form
-            onSubmit={handleSubmit}
-            className="flex bg-white rounded-full overflow-hidden w-full max-w-md mx-auto md:mx-0"
-          >
-            <input
-              type="email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              placeholder="Enter your email"
-              className="flex-1 px-5 py-3 outline-none text-gray-700 placeholder-gray-400"
-              required
-            />
-            <button
-              type="submit"
-              disabled={loading}
-              className="bg-[#14AB55] px-6 font-semibold text-white hover:bg-[#0f8a45] transition disabled:opacity-70 disabled:cursor-not-allowed"
-            >
-              {loading ? "..." : "Subscribe"}
-            </button>
-          </form>
+  onSubmit={handleSubmit}
+  className="flex rounded-full overflow-hidden w-full max-w-md mx-auto md:mx-0 "
+>
+  <input
+    type="email"
+    value={email}
+    onChange={(e) => setEmail(e.target.value)}
+    placeholder="Enter your email"
+    className="bg-white flex-1 px-5 text-sm sm:text-base outline-none text-gray-700 h-12 placeholder-gray-500 opacity-30"
+    required
+  />
+  <Button
+    type="submit"
+    disabled={loading}
+    className="bg-white px-6 font-semibold text-green-500 hover:bg-[#0f8a45] hover:text-white transition disabled:opacity-70 disabled:cursor-not-allowed h-12 flex items-center justify-center rounded-none"
+  >
+    {loading ? "..." : "Subscribe"}
+  </Button>
+</form>
+
 
           {/* Message */}
           {message && (
