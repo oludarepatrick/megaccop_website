@@ -85,7 +85,7 @@ const Footer = () => {
       </div>
       <div className="max-w-[1280px] mx-auto px-4">
         <hr/>
-        <div className="py-6 flex items-center justify-between flex-wrap gap-10 justify-center sm:justify-start">
+        <div className="py-6 flex items-center sm:justify-between flex-wrap gap-10 justify-center">
           <p className="text-footertext text-sm">Copyright © 2025 Megacoop. All Rights Reserved</p>
           <div className="flex items-center gap-4">
             {socialIcons.map((icon,index) => (
