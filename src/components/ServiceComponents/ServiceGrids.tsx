@@ -1,6 +1,6 @@
 import React from "react"
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
-import { ChevronRight, Check, CircleCheck } from "lucide-react"
+
+import { ChevronRight } from "lucide-react"
 import styles from "./ServiceGrid.module.css"
 import { Card } from "../ui/card"
 import { Button } from "../ui/button"

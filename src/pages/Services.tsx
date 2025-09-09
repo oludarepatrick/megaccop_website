@@ -8,8 +8,6 @@ const Services = () => {
     useHead({title: "Services"});
 
     return(
-        
-      // <div className="min-h-screen bg-background flex flex-col mx-auto lg:pl-8 md:pl-12 px-4">
       <section className=" px-4 bg-muted/30">
       <div className="max-w-7xl mx-auto">
         <motion.h2

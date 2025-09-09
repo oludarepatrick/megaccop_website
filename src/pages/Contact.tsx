@@ -12,7 +12,6 @@ import { Button } from "@/components/ui/button";
 import { Facebook, Instagram, Twitter } from "lucide-react";
 import Newsletter from "@/components/Newsletter";
 
-// const siteKey = import.meta.env.VITE_RECAPTCHA_SITE_KEY;
 
 const contactSchema = z.object({
   name: z.string().min(2, "Please enter your name"),
@@ -109,8 +108,6 @@ export default function Contact() {
         <div className="max-w-7xl mx-auto px-4 sm:pl-12 flex flex-col items-center justify-center gap-4 md:flex-row md:justify-between">
           {/* Logo */}
           <div className="flex items-center pl-8">
-            {/* <span className="font-extrabold text-lg text-[#14AB55]">Mega</span>
-            <span className="font-semibold text-black">Coop</span> */}
           </div>
 
           {/* Contact Us CTA (right) */}
@@ -155,14 +152,6 @@ export default function Contact() {
             </p>
 
             {/* big CTA like in the screenshot (left bottom) */}
-            {/* <div className="mt-12">
-              <button
-                onClick={scrollToForm}
-                className="bg-[#14AB55] px-8 py-4 rounded-full text-white font-semibold shadow-md hover:bg-[#10a148] transition"
-              >
-                Leave us a Message →
-              </button>
-            </div> */}
           </motion.div>
 
           <motion.div
@@ -250,7 +239,7 @@ export default function Contact() {
                       {...register("message")}
                       placeholder="Write your message..."
                       rows={5}
-                      className="bg-transparent border-0 rounded-none px-0 py-2 placeholder:text-black/60 text-black focus:ring-0 focus:border-b focus-border-0 border-b border-black/20 resize-none"
+                      className="bg-transparent border-0 rounded-none px-0 py-2 placeholder:text-black/60 text-black focus:ring-0 focus:border-b focus:border-0 border-b border-black/20 resize-none"
                       aria-invalid={!!errors.message}
                     />
                     {errors.message && (
@@ -274,13 +263,6 @@ export default function Contact() {
 
                   {/* Submit */}
                   <div>
-                    {/* <Button
-                      type="submit"
-                      disabled={isSubmitting}
-                      className="w-full bg-[#14AB55] hover:bg-[#10a148] text-white"
-                    >
-                      {isSubmitting ? "Sending..." : "Send message"}
-                    </Button> */}
 
                     <Button
                       type="submit"
