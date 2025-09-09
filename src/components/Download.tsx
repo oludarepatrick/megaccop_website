@@ -19,7 +19,7 @@ const Download = () => {
                         features, including easy transactions, quick payments, 
                         and efficient financial management.
                     </p>
-                    <div className="flex gap-6 flex-col sm:items-center sm:flex-row items-start">
+                    <div className="invisible flex gap-6 flex-col sm:items-center sm:flex-row items-start">
                         <img src={GooglePlay} alt="google-play-image" />
                         <img src={AppleStore} alt="apple-store-image" />
                     </div>
