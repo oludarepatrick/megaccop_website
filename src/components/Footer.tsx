@@ -89,7 +89,7 @@ const Footer = () => {
           <p className="text-footertext text-sm">Copyright © 2025 Megacoop. All Rights Reserved</p>
           <div className="flex items-center gap-4">
             {socialIcons.map((icon,index) => (
-              <div className="bg-whitebg rounded-full p-2">
+              <div className="bg-whitebg rounded-full p-2" key={index}>
                 <img  key={index} src={icon} alt={`social-icon ${index}`} />
               </div>
             ))}
