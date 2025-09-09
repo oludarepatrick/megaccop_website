@@ -2,8 +2,8 @@ import { Card } from "../ui/card";
 import styles from "./FeaturesCard.module.css"
 import { motion } from "framer-motion"
 import Rectangle651 from "../../assets/Rectangle-651.png";
-import Rectangle651_1 from "../../assets/Rectangle-651-1.png";
-import Rectangle651_2 from "../../assets/Rectangle-651-2.png";
+import Rectangle651_1 from "../../assets/Rectangle 651-1.png";
+import Rectangle651_2 from "../../assets/Rectangle 651-2.png";
 import Rectangle651_3 from "../../assets/Rectangle-651-3.png";
 const features = [
   {
