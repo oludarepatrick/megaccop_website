@@ -1,7 +1,7 @@
 .scrollContainer {
   display: flex;
   gap: 1.5rem;
-  overflow-x: auto!important;
+  overflow-x: auto !important;
   padding-bottom: 1rem;
   scroll-snap-type: x mandatory;
 }
