@@ -1,42 +1,45 @@
 import { Card } from "../ui/card";
 import styles from "./FeaturesCard.module.css"
 import { motion } from "framer-motion"
-
+import Rectangle651 from "../../assets/Rectangle-651.png";
+import Rectangle651_1 from "../../assets/Rectangle-651-1.png";
+import Rectangle651_2 from "../../assets/Rectangle-651-2.png";
+import Rectangle651_3 from "../../assets/Rectangle-651-3.png";
 const features = [
   {
     id: 1,
     title: "Personalized Dashboard",
     description: "Get a clear view of your savings, loan status, and spending all in one place",
-    image: "src/assets/Rectangle 651.png",
+    image: Rectangle651,
   },
   {
     id: 2,
     title: "Bank-Grade Security",
     description: "Your data and transactions are protected with encryption, and secure login",
-    image: "src/assets/Rectangle 651 (1).png",
+    image: Rectangle651_1,
   },
   {
     id: 3,
     title: "Smart Notifications",
     description: "Never miss a payment or savings deposit with timely alerts.",
-    image: "src/assets/Rectangle 651 (2).png",
+    image: Rectangle651_2,
   },
   {
     id: 4,
     title: "Multi-language",
     description: "Choose your preferred language made for all members",
-    image: "src/assets/Rectangle 651 (3).png",
+    image: Rectangle651_3,
   },
 ]
 
 
 export default function FeatureCards() {
   return (
-    <section className="py-16 px-4">
+    <section className="py-8 px-4">
       <div className="max-w-7xl mx-auto">
         <div className={styles.scrollContainer}> 
           {features.map((feature) => (
-              <Card  className={`border-0 shadow-none max-w-[238px] ${styles.featureCard}`}>
+              <Card key={feature.id} className={`border-0 shadow-none min-w-[238px] ${styles.featureCard}`}>
                 <motion.h3
                   initial={{ opacity: 0, y: -20 }}
                   animate={{ opacity: 1, y: 0 }}

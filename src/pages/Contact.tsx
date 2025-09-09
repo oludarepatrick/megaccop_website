@@ -1,6 +1,6 @@
 import { useHead } from "@unhead/react";
 import ReCAPTCHA from "react-google-recaptcha";
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { motion, type Variants } from "framer-motion";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
@@ -69,6 +69,10 @@ export default function Contact() {
   const onCaptchaChange = (token: string | null) => {
     setCaptchaToken(token);
   };
+    
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
 
   const onSubmit = async (data: ContactFormData) => {
     if (!captchaToken) {

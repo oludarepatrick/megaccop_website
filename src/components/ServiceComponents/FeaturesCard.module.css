@@ -21,7 +21,7 @@
 }
 
 .featureCard {
-  flex: 0 0 300px;
+  flex: 0 0 238px;
   /* padding: 1.5rem; */
   scroll-snap-align: start;
 }
