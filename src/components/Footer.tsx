@@ -17,9 +17,12 @@ import instaIcon from "../assets/insta-icon.svg";
 import youtubeIcon from "../assets/youtube-icon.svg";
 
 
-const socialIcons =[
-  facebookIcon, twitterIcon, instaIcon, youtubeIcon
-]
+const socialIcons = [
+  { icon: facebookIcon, url: "https://facebook.com/megacoop" },
+  { icon: twitterIcon, url: "https://twitter.com/megacoop" },
+  { icon: instaIcon, url: "https://instagram.com/megacoop" },
+  { icon: youtubeIcon, url: "https://youtube.com/@megacoop" },
+];
 
 const Footer = () => {
   return (
@@ -88,12 +91,17 @@ const Footer = () => {
         <div className="py-6 flex items-center sm:justify-between flex-wrap gap-10 justify-center">
           <p className="text-footertext text-sm">Copyright © 2025 Megacoop. All Rights Reserved</p>
           <div className="flex items-center gap-4">
-            {socialIcons.map((icon,index) => (
-              <div className="bg-whitebg rounded-full p-2" key={index}>
-                <img  key={index} src={icon} alt={`social-icon ${index}`} />
-              </div>
+            {socialIcons.map((social, index) => (
+              <a
+                key={index}
+                href={social.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-whitebg rounded-full p-2 hover:opacity-80 transition"
+              >
+                <img src={social.icon} alt={`social-icon-${index}`} />
+              </a>
             ))}
-
           </div>
         </div>
         

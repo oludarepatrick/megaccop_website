@@ -291,7 +291,7 @@ export default function Contact() {
           whileInView="show"
           variants={iconsVariant}
           viewport={{ once: false, amount: 0.3 }}
-          className="z-2000 gap-4 md:flex flex-col gap-4 items-center absolute right-6 top-[6%]"
+          className="gap-4 md:flex flex-col gap-4 items-center absolute right-6 top-[6%]"
           aria-hidden
         >
           <a

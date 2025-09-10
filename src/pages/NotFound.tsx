@@ -5,9 +5,7 @@ import { useHead } from "@unhead/react";
 
 const NotFound = () => {
     useHead({title: "404"});
-
-
-
+    
     const navigate = useNavigate();
 
     return (
