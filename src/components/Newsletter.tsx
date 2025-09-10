@@ -33,7 +33,7 @@ export default function ContactSection() {
   };
 
   return (
-    <section className="w-full bg-[#F9FAFB] relative py-16 pb-0">
+    <section className="w-full bg-[#F9FAFB] relative py-16 pb-0 ">
       {/* Contact Info */}
       <p className="text-gray-600 px-6">Contact Info</p>
       <motion.div
@@ -78,7 +78,7 @@ export default function ContactSection() {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: 0.2 }}
         viewport={{ once: true }}
-        className="bg-[#14AB55] py-16 px-6"
+        className="bg-[#14AB55] py-16 px-4"
       >
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
           {/* Text */}
@@ -96,20 +96,20 @@ export default function ContactSection() {
           {/* Input Form */}
           <form
   onSubmit={handleSubmit}
-  className="flex rounded-full overflow-hidden w-full max-w-md mx-auto md:mx-0 "
+  className="flex rounded-full overflow-hidden  max-w-sm mx-auto "
 >
   <input
     type="email"
     value={email}
     onChange={(e) => setEmail(e.target.value)}
     placeholder="Enter your email"
-    className="bg-white flex-1 px-5 text-sm sm:text-base outline-none text-gray-700 h-12 placeholder-gray-500 opacity-30"
+    className="bg-white flex-1 pl-2 text-sm sm:text-base outline-none text-gray-700 h-12 placeholder-gray-500 opacity-30"
     required
   />
   <Button
     type="submit"
     disabled={loading}
-    className="bg-white px-6 font-semibold text-green-500 hover:bg-[#0f8a45] hover:text-white transition disabled:opacity-70 disabled:cursor-not-allowed h-12 flex items-center justify-center rounded-none"
+    className=" bg-white  font-semibold text-green-500 hover:bg-[#0f8a45] hover:text-white transition disabled:opacity-70 disabled:cursor-not-allowed h-12 flex  justify-center rounded-none"
   >
     {loading ? "..." : "Subscribe"}
   </Button>
