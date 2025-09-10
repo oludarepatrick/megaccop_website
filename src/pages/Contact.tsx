@@ -97,7 +97,7 @@ export default function Contact() {
   };
 
   return (
-    <div className="bg-transparent text-black min-h-screen lg:p-8 pt-0">
+    <div className="bg-transparent text-black min-h-screen lg:p-8 pt-0 font-poppins">
       {/* Header */}
       <motion.header
         initial="hidden"

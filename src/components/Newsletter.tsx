@@ -26,14 +26,16 @@ export default function ContactSection() {
       setMessage("✅ Subscription successful!");
       setEmail("");
     } catch (err) {
-      setMessage(`❌ Something went wrong. Please try again. ${(err as Error).message}`);
+      setMessage(
+        `❌ Something went wrong. Please try again. ${(err as Error).message}`
+      );
     } finally {
       setLoading(false);
     }
   };
 
   return (
-    <section className="w-full bg-[#F9FAFB] relative py-16 pb-0">
+    <section className="w-full bg-[#F9FAFB] relative py-16 pb-0 font-poppins">
       {/* Contact Info */}
       <p className="text-gray-600 px-6">Contact Info</p>
       <motion.div
@@ -49,7 +51,7 @@ export default function ContactSection() {
           <h2 className="text-3xl md:text-4xl font-extrabold leading-snug text-black">
             We are always <br /> happy to assist you
           </h2>
-       </div>
+        </div>
 
         {/* Email */}
         <div>
@@ -95,26 +97,25 @@ export default function ContactSection() {
 
           {/* Input Form */}
           <form
-  onSubmit={handleSubmit}
-  className="flex rounded-full overflow-hidden w-full max-w-md mx-auto md:mx-0 "
->
-  <input
-    type="email"
-    value={email}
-    onChange={(e) => setEmail(e.target.value)}
-    placeholder="Enter your email"
-    className="bg-white flex-1 px-5 text-sm sm:text-base outline-none text-gray-700 h-12 placeholder-gray-500 opacity-30"
-    required
-  />
-  <Button
-    type="submit"
-    disabled={loading}
-    className="bg-white px-6 font-semibold text-green-500 hover:bg-[#0f8a45] hover:text-white transition disabled:opacity-70 disabled:cursor-not-allowed h-12 flex items-center justify-center rounded-none"
-  >
-    {loading ? "..." : "Subscribe"}
-  </Button>
-</form>
-
+            onSubmit={handleSubmit}
+            className="flex rounded-2xl overflow-hidden w-full max-w-md mx-auto md:mx-0 "
+          >
+            <input
+              type="email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              placeholder="Enter your email"
+              className="bg-white/10 flex-1 px-5 text-sm sm:text-base text-white outline-none h-12 placeholder-whitebg"
+              required
+            />
+            <Button
+              type="submit"
+              disabled={loading}
+              className="bg-white px-6 font-semibold text-green-500 hover:bg-[#0f8a45] hover:text-white transition disabled:opacity-70 disabled:cursor-not-allowed h-12 flex items-center justify-center rounded-none"
+            >
+              {loading ? "..." : "Subscribe"}
+            </Button>
+          </form>
 
           {/* Message */}
           {message && (
