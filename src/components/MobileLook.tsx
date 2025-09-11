@@ -26,4 +26,5 @@ import Highlight from "./Highlight"
         </section>
   )
 }
+
 export default MobileLook;
