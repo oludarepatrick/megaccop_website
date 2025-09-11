@@ -5,7 +5,7 @@ import Download from "@/components/Download";
 import { motion } from "framer-motion";
 
 const Services = () => {
-    useHead({title: "Services"});
+    useHead({title: "services"});
 
     return(
       <section className=" px-4 bg-muted/30">

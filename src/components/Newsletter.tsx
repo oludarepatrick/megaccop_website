@@ -80,7 +80,7 @@ export default function ContactSection() {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: 0.2 }}
         viewport={{ once: true }}
-        className="bg-[#14AB55] py-16 px-6"
+        className="bg-[#14AB55] py-16 px-4"
       >
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
           {/* Text */}
@@ -105,13 +105,13 @@ export default function ContactSection() {
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               placeholder="Enter your email"
-              className="bg-white/10 flex-1 px-5 text-sm sm:text-base text-white outline-none h-12 placeholder-whitebg"
+              className="bg-white/10 wrap flex-1 px-2 text-sm sm:text-base text-white outline-none h-12 placeholder-whitebg"
               required
             />
             <Button
               type="submit"
               disabled={loading}
-              className="bg-white px-6 font-semibold text-green-500 hover:bg-[#0f8a45] hover:text-white transition disabled:opacity-70 disabled:cursor-not-allowed h-12 flex items-center justify-center rounded-none"
+              className="bg-white  font-semibold text-green-500 hover:bg-[#0f8a45] hover:text-white transition disabled:opacity-70 disabled:cursor-not-allowed h-12 flex items-center justify-center rounded-none"
             >
               {loading ? "..." : "Subscribe"}
             </Button>
