@@ -1,10 +1,9 @@
-import { Button } from "./ui/button"
-import mobileImg from "../assets/mobile-app.png"
+import introImg from "../assets/mega-about-img.png"
 import Highlight from "./Highlight"
 
- const MobileLook = () => {
+ const WhoWeAre = () => {
     return (
-        <section className="container mx-auto px-8 py-16">
+        <section className="container mx-auto px-8 pb-16">
             <div className="max-w-[1280px] mx-auto flex flex-col items-center justify-between gap-8 lg:flex-row ">
                 <header className="w-full max-w-[620px] mx-auto text-poppins text-center lg:text-left flex flex-col items-center lg:items-start">
                     <Highlight text="Anywhere, Anytime with Megacoop" textClassName="text-xs" />
@@ -16,14 +15,13 @@ import Highlight from "./Highlight"
                         you can effortlessly handle a wide range of transactions,
                         from bill payments and barcode scans to e-commerce
                     </p>
-                    <Button className="bg-megagreen text-sm font-medium font-poppins rounded-full">Download App</Button>
                 </header>
                 <div className="w-full flex item-center justify-center ">
-                    <img src={mobileImg} alt="mobile-app"  />
+                    <img src={introImg} alt="mobile-app" loading="lazy"  />
                 </div>
             </div>
 
         </section>
   )
 }
-export default MobileLook;
+export default WhoWeAre;

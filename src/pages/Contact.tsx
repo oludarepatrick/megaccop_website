@@ -97,7 +97,7 @@ export default function Contact() {
   };
 
   return (
-    <div className="bg-transparent text-black min-h-screen lg:p-8 pt-0">
+    <div className="bg-transparent text-black min-h-screen lg:p-8 pt-0 font-poppins">
       {/* Header */}
       <motion.header
         initial="hidden"
@@ -291,7 +291,7 @@ export default function Contact() {
           whileInView="show"
           variants={iconsVariant}
           viewport={{ once: false, amount: 0.3 }}
-          className="z-2000 gap-4 md:flex flex-col gap-4 items-center absolute right-6 top-[6%]"
+          className="gap-4 md:flex flex-col gap-4 items-center absolute right-6 top-[6%]"
           aria-hidden
         >
           <a
