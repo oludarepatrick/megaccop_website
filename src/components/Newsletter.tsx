@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
 import { Button } from "./ui/button";
+import { Input } from "./ui/input";
 
 export default function ContactSection() {
   const [email, setEmail] = useState("");
@@ -100,12 +101,12 @@ export default function ContactSection() {
             onSubmit={handleSubmit}
             className="flex rounded-2xl overflow-hidden w-full max-w-md mx-auto md:mx-0 "
           >
-            <input
+            < Input
               type="email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               placeholder="Enter your email"
-              className="bg-white/10 px-2 text-sm sm:text-base text-white outline-none h-12 placeholder-whitebg"
+              className="bg-white/10 md:flex-1 px-2 text-sm sm:text-base text-white outline-none h-12 placeholder-whitebg border-0 rounded-none"
               required
             />
             <Button
