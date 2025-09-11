@@ -10,7 +10,8 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
 import { Facebook, Instagram, Twitter } from "lucide-react";
-import Newsletter from "@/components/Newsletter";
+import ContactSection from "@/components/Newsletter";
+
 
 
 const contactSchema = z.object({
@@ -325,7 +326,7 @@ export default function Contact() {
           </a>
         </motion.div>
 
-        <Newsletter />
+        <ContactSection />
       </main>
     </div>
   );
