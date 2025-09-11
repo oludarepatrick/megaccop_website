@@ -4,8 +4,8 @@ import heroReceipt1 from "../assets/hero-receipt-1.png";
 import heroReceipt2 from "../assets/hero-receipt-2.png";
 import heroReceipt3 from "../assets/hero-receipt-3.png";
 import heroReceipt4 from "../assets/hero-receipt-4.png";
-import GooglePlay from "../assets/Google Play Black.png";
-import AppleStore from "../assets/App Store Black.png";
+// import GooglePlay from "../assets/Google Play Black.png";
+// import AppleStore from "../assets/App Store Black.png";
 
 
 const HeroSection = () => {
@@ -26,10 +26,10 @@ const HeroSection = () => {
                     exclusive deals right from your phone
                 </p>
 
-                <div className="flex gap-6 flex-col sm:items-center sm:flex-row items-start pt-4 pb-8">
+                {/* <div className="flex gap-6 flex-col sm:items-center sm:flex-row items-start pt-4 pb-8">
                     <img src={GooglePlay} alt="google-play-image" />
                     <img src={AppleStore} alt="apple-store-image" />
-                </div>
+                </div> */}
 
                 <div className="pt-8 relative max-w-4xl w-full flex items-center justify-center">
                     <img src={iPhone} alt="megacoop-mobile-app" />

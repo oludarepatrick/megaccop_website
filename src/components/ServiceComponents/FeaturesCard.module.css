@@ -1,7 +1,7 @@
 .scrollContainer {
   display: flex;
   gap: 1.5rem;
-  overflow-x: auto!important;
+  overflow-x: auto !important;
   padding-bottom: 1rem;
   scroll-snap-type: x mandatory;
 }
@@ -21,7 +21,7 @@
 }
 
 .featureCard {
-  flex: 0 0 300px;
+  flex: 0 0 238px;
   /* padding: 1.5rem; */
   scroll-snap-align: start;
 }

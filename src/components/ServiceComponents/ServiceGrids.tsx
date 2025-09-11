@@ -1,10 +1,11 @@
 import React from "react"
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
-import { ChevronRight, Check, CircleCheck } from "lucide-react"
+
+import { ChevronRight } from "lucide-react"
 import styles from "./ServiceGrid.module.css"
 import { Card } from "../ui/card"
 import { Button } from "../ui/button"
 import { motion, type Variants } from "framer-motion"
+import secureIcon from "@/assets/secure.png";
 
 const services = [
   {
@@ -107,7 +108,7 @@ export default function ServiceGrid() {
         <motion.div
           className={styles.serviceGrid}
           variants={containerVariants}
-          initial="hidden"
+          initial="show"
           whileInView="show"
           viewport={{ once: false, amount: 0.2 }}
         >
@@ -122,7 +123,7 @@ export default function ServiceGrid() {
                 >
                 {/* <CircleCheck className="w-6 h-6 text-green-600" /> */}
                       <img
-                    src="src/assets/secure.png"
+                    src={secureIcon}
                     alt="Check Icon"
                     className="w-6 h-6 text-green-600"
                   />
