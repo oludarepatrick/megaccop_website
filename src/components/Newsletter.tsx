@@ -105,13 +105,13 @@ export default function ContactSection() {
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               placeholder="Enter your email"
-              className="bg-white/10 wrap flex-1 px-2 text-sm sm:text-base text-white outline-none h-12 placeholder-whitebg"
+              className="bg-white/10 px-2 text-sm sm:text-base text-white outline-none h-12 placeholder-whitebg"
               required
             />
             <Button
               type="submit"
               disabled={loading}
-              className="bg-white  font-semibold text-green-500 hover:bg-[#0f8a45] hover:text-white transition disabled:opacity-70 disabled:cursor-not-allowed h-12 flex items-center justify-center rounded-none"
+              className="bg-white font-semibold text-green-500 hover:bg-[#0f8a45] hover:text-white transition disabled:opacity-70 disabled:cursor-not-allowed h-12 flex items-center justify-center rounded-none"
             >
               {loading ? "..." : "Subscribe"}
             </Button>
