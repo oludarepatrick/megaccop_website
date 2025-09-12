@@ -69,7 +69,6 @@ const Home = () => {
             <motion.div variants={itemVariants}>
                 <Download/>
             </motion.div>        
-        
         </motion.div>
     )
 }

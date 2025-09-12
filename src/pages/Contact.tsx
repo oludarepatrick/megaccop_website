@@ -49,7 +49,7 @@ const iconsVariant: Variants = {
 };
 
 export default function Contact() {
-  useHead({ title: "Contact" });
+  useHead({ title: "contact" });
 
   const formRef = useRef<HTMLFormElement | null>(null);
   const recaptchaRef = useRef<ReCAPTCHA>(null);
