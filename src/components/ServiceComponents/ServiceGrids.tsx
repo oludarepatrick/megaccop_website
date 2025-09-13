@@ -5,7 +5,7 @@ import styles from "./ServiceGrid.module.css"
 import { Card } from "../ui/card"
 import { Button } from "../ui/button"
 import { motion, type Variants } from "framer-motion"
-import secureIcon from "@/assets/secure.png";
+import secureIcon from "@/assets/safe-shield-icon.svg";
 
 const services = [
   {

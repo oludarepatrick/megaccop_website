@@ -1,5 +1,5 @@
 import { Button } from "./ui/button"
-import mobileImg from "../assets/mobile-app.png"
+import mobileImg from "../assets/mobile-app.webp"
 import Highlight from "./Highlight"
 
  const MobileLook = () => {
@@ -9,14 +9,14 @@ import Highlight from "./Highlight"
                 <header className="w-full max-w-[620px] mx-auto text-poppins text-center lg:text-left flex flex-col items-center lg:items-start">
                     <Highlight text="Anywhere, Anytime with Megacoop" textClassName="text-xs" />
                     <h2 className="md:text-[40px] text-3xl leading-[1.2] font-medium lg:pr-16">
-                        All Transactions Easily on Your Mobile
+                        All Transactions Easily on Your Device
                     </h2>
                     <p className="my-4 text-lg">
                         Paying for anything is as easy as a tap. With Megacoop, 
                         you can effortlessly handle a wide range of transactions,
                         from bill payments and barcode scans to e-commerce
                     </p>
-                    <Button className="bg-megagreen text-sm font-medium font-poppins rounded-full">Download App</Button>
+                    <Button className="bg-megagreen text-sm font-medium font-poppins rounded-full">Get Started</Button>
                 </header>
                 <div className="w-full flex item-center justify-center ">
                     <img src={mobileImg} alt="mobile-app"  />

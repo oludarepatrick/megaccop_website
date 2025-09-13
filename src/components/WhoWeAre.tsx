@@ -1,4 +1,4 @@
-import introImg from "../assets/mega-about-img.png"
+import introImg from "../assets/mega-about-img.webp"
 import Highlight from "./Highlight"
 
  const WhoWeAre = () => {
@@ -8,7 +8,7 @@ import Highlight from "./Highlight"
                 <header className="w-full max-w-[620px] mx-auto text-poppins text-center lg:text-left flex flex-col items-center lg:items-start">
                     <Highlight text="Anywhere, Anytime with Megacoop" textClassName="text-xs" />
                     <h2 className="md:text-[40px] text-3xl leading-[1.2] font-medium lg:pr-16">
-                        All Transactions Easily on Your Mobile
+                        Who We Are
                     </h2>
                     <p className="my-4 text-lg">
                         Paying for anything is as easy as a tap. With Megacoop, 
