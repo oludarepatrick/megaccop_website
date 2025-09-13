@@ -60,7 +60,7 @@ const Testimonials = () => {
                             <blockquote>{item.testimony}</blockquote>
                             <div className="flex items-center gap-4 mt-4">
                                 <Avatar>
-                                    <AvatarImage src={item.image} alt={`Photo of ${item.userName}`} />
+                                    <AvatarImage src={item.image} alt={`Photo of ${item.userName}`} loading="lazy" />
                                     <AvatarFallback>AU</AvatarFallback>
                                 </Avatar>
                                 <div>

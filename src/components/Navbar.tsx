@@ -46,8 +46,8 @@ const Navbar = () => {
   return (
     <header className="container mx-auto sticky top-0 left-0 w-full z-50 mt-6 px-8">
       <nav
-        arial-label="Global-Navigation"
-        className="max-w-[1280px] mx-auto bg-black flex items-center justify-between lg:px-16 p-4 gap-4 rounded-full relative"
+        aria-label="Global-Navigation"
+        className="max-w-[1280px] mx-auto bg-black flex items-center justify-between lg:px-16 px-4 gap-4 rounded-full relative"
       >
         <h1 className="sr-only">MegaCoop</h1>
         <Link to="/" className="flex items-center">

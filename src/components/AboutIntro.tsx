@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import IntroBcg from "../assets/about-bcg.png";
+import IntroBcg from "../assets/about-bcg.webp";
 
 const AboutIntro = () => {
     return (

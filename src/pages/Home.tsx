@@ -17,59 +17,34 @@ const Home = () => {
         window.scrollTo(0, 0);
     }, []);
     
-    // Animation variants
-    const ease: [number, number, number, number] = [0.22, 1, 0.36, 1];
-
-    
-    const containerVariants: Variants = {
-        hidden: { opacity: 0 },
-        show: {
-            opacity: 1,
-            transition: {
-                duration: 0.5,
-                staggerChildren: 0.1,
-                ease
-            }
-        }
-    };
-    
-    const itemVariants: Variants = {
-        hidden: { opacity: 0, y: 20 },
-        show: {
-            opacity: 1,
+    const heroVariants: Variants = {
+        hidden: { opacity: 0, y: 30 },
+        show: { 
+            opacity: 1, 
             y: 0,
-            transition: {
+            transition: { 
                 duration: 0.6,
-                ease
+                ease: [0.22, 1, 0.36, 1]
             }
         }
     };
     
     return(
-        <motion.div
-            initial="hidden"
-            animate="show"
-            variants={containerVariants}
-        >
-            <motion.div variants={itemVariants}>
+        <>
+            <motion.div
+                initial="hidden"
+                animate="show"
+                variants={heroVariants}
+            >
                 <HeroSection/>
             </motion.div>
-            <motion.div variants={itemVariants}>
-                <Benefits/>
-            </motion.div>
-            <motion.div variants={itemVariants}>
-                <MobileLook/>
-            </motion.div>
-            <motion.div variants={itemVariants}>
-                <Faq/>
-            </motion.div>
-            <motion.div variants={itemVariants}>
-                <Testimonials/>
-            </motion.div>
-            <motion.div variants={itemVariants}>
-                <Download/>
-            </motion.div>        
-        </motion.div>
+            <Benefits/>
+            <MobileLook/>
+            <Faq/>
+            <Testimonials/>
+            <Download/>
+        
+        </>
     )
 }
 export default Home;
