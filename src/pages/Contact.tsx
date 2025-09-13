@@ -10,8 +10,10 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
 import { Facebook, Instagram, Twitter } from "lucide-react";
-import Newsletter from "@/components/Newsletter";
+import ContactSection from "@/components/Newsletter";
 
+
+const siteKey = import.meta.env.VITE_RECAPTCHA_SITE_KEY;
 
 const contactSchema = z.object({
   name: z.string().min(2, "Please enter your name"),
@@ -49,7 +51,7 @@ const iconsVariant: Variants = {
 };
 
 export default function Contact() {
-  useHead({ title: "Contact" });
+  useHead({ title: "contact" });
 
   const formRef = useRef<HTMLFormElement | null>(null);
   const recaptchaRef = useRef<ReCAPTCHA>(null);
@@ -68,10 +70,10 @@ export default function Contact() {
   const onCaptchaChange = (token: string | null) => {
     setCaptchaToken(token);
   };
-    
-    // useEffect(() => {
-    //     window.scrollTo(0, 0);
-    // }, []);
+
+  // useEffect(() => {
+  //     window.scrollTo(0, 0);
+  // }, []);
 
   const onSubmit = async (data: ContactFormData) => {
     if (!captchaToken) {
@@ -253,11 +255,17 @@ export default function Contact() {
                   <div className="pt-2">
                     <div className="h-16 bg-black/3 rounded-md flex items-center justify-center text-black/60">
                       {/* [ reCAPTCHA widget ] */}
-                      <ReCAPTCHA
-                        sitekey={import.meta.env.VITE_RECAPTCHA_SITE_KEY}
-                        onChange={onCaptchaChange}
-                        ref={recaptchaRef}
-                      />
+                      {siteKey ? (
+                        <ReCAPTCHA
+                          sitekey={siteKey}
+                          onChange={onCaptchaChange}
+                          ref={recaptchaRef}
+                        />
+                      ) : (
+                        <p className="text-red-500 text-sm">
+                          ⚠️ reCAPTCHA not configured. Please set <code>VITE_RECAPTCHA_SITE_KEY</code>.
+                        </p>
+                      )}
                     </div>
                   </div>
 
@@ -325,7 +333,7 @@ export default function Contact() {
           </a>
         </motion.div>
 
-        <Newsletter />
+        <ContactSection />
       </main>
     </div>
   );

@@ -17,22 +17,6 @@ const Home = () => {
         window.scrollTo(0, 0);
     }, []);
     
-    // // Animation variants
-    // const ease: [number, number, number, number] = [0.22, 1, 0.36, 1];
-
-    
-    // const containerVariants: Variants = {
-    //     hidden: { opacity: 0 },
-    //     show: {
-    //         opacity: 1,
-    //         transition: {
-    //             duration: 0.5,
-    //             staggerChildren: 0.1,
-    //             ease
-    //         }
-    //     }
-    // };
-
     const heroVariants: Variants = {
         hidden: { opacity: 0, y: 30 },
         show: { 
@@ -58,7 +42,7 @@ const Home = () => {
             <MobileLook/>
             <Faq/>
             <Testimonials/>
-            <Download/>   
+            <Download/>
         
         </>
     )
