@@ -8,16 +8,16 @@ import { useMutation } from '@tanstack/react-query';
 import axios, { AxiosError } from 'axios';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
+import { Card, CardContent,CardHeader } from '@/components/ui/card';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { Dialog, DialogContent, DialogDescription, DialogFooter, DialogHeader, DialogTitle } from '@/components/ui/dialog';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
-import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from '@/components/ui/form';
+import { Form, FormControl, FormField, FormItem, FormMessage } from '@/components/ui/form';
 import signup_image from '../assets/signup-image.png';
 import megacoop_logo from '../assets/megacoop-logo-1.png';
-import { CalendarIcon, Eye, EyeOff } from 'lucide-react';
+import { Eye, EyeOff } from 'lucide-react';
 import SuccessIcon from '../assets/signup_successfull_icon.png';
-import ErrorIcon from '../assets/error_icon.png';
+import ErrorIcon from '../assets/Error_icon.png';
 import SuccessfulSignUpBg from '../assets/signup_success_background_img.png';
 import { motion } from 'framer-motion';
 // import { Popover, PopoverContent, PopoverTrigger } from '@/components/ui/popover';
@@ -222,11 +222,6 @@ const SignUpLoginPage = () => {
         setSignUpStep(2);
     };
 
-    const handleContinueLater = () => {
-        setUserProfileDetails(null);
-        setShowSuccessModal(false);
-        setActiveTab("login");
-    };
 
     const handleStartJourney = () => {
         setSignUpStep(1);
