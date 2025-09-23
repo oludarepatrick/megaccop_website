@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { AlignJustify } from "lucide-react";
 import { Button } from "./ui/button";
 import Logo from "/Logo.svg";
@@ -92,12 +92,12 @@ const Navbar = () => {
         </ul>
 
         <div className="hidden lg:flex items-center gap-4">
-          <Link to="/SignIn">
+          <Link to="/signup">
             <Button variant="outline" className="bg-transparent rounded-full border-megagreen text-whitebg font-normal">
               Sign Up
             </Button>
           </Link>
-          <Link to="/SignUp">
+          <Link to="/login">
             <Button className="bg-megagreen rounded-full">Login</Button>
           </Link>
         </div>
@@ -128,12 +128,12 @@ const Navbar = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2, duration: 0.3 }}
             >
-              <Link to="/SignIn" onClick={handleMenuItemClick}>
+              <Link to="/signup" onClick={handleMenuItemClick}>
                 <Button variant="outline" className="border-whitebg rounded-full px-8">
                   Sign Up
                 </Button>
               </Link>
-              <Link to="/SignUp" onClick={handleMenuItemClick}>
+              <Link to="/login" onClick={handleMenuItemClick}>
                 <Button className="rounded-full px-10">Login</Button>
               </Link>
             </motion.div>

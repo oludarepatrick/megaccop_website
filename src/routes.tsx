@@ -7,7 +7,9 @@ import LoadingSpinner from "./components/LoadingSpinner";
 const Home = lazy(()=> import("./pages/Home"));
 const About = lazy(()=> import("./pages/About"));
 const Services = lazy(()=> import("./pages/Services"));
-const Contact = lazy(()=> import("./pages/Contact"));
+const Contact = lazy(() => import("./pages/Contact"));
+const SignUp = lazy(() => import("./pages/SignUp"));
+const TermsAndConditions = lazy(() => import("./pages/TermsAndConditions"));
 
 
 const suspenseHandler = (Component: LazyExoticComponent<ComponentType>) => (
@@ -25,7 +27,11 @@ export const router = createBrowserRouter([
             { index: true, element: suspenseHandler(Home)},
             { path: "about", element: suspenseHandler(About)},
             { path: "services", element: suspenseHandler(Services)},
-            { path: "contact", element: suspenseHandler(Contact)}
+            { path: "contact", element: suspenseHandler(Contact) },
+            { path: "signup", element: suspenseHandler(SignUp) },
+            { path: "login", element: suspenseHandler(SignUp) },
+            { path: "terms-and-conditions", element: suspenseHandler(TermsAndConditions) },
+            
         ],
         errorElement: <NotFound/>
         
