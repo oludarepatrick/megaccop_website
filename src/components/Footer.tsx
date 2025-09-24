@@ -1,5 +1,7 @@
 import { Link, useLocation } from "react-router-dom";
-import Logo from "/Megacoop-logo.svg";
+import Logo from "/Logo.svg";
+// import Logo from "/Megacoop-logo.svg";
+
 import {
   Card,
   CardContent,
@@ -15,13 +17,14 @@ import facebookIcon from "../assets/facebook-icon.svg";
 import twitterIcon from "../assets/twitter-icon.svg";
 import instaIcon from "../assets/insta-icon.svg";
 import youtubeIcon from "../assets/youtube-icon.svg";
+import { Label } from "./ui/label";
 
 
 const socialIcons = [
-  { icon: facebookIcon, url: "https://facebook.com/megacoop" },
-  { icon: twitterIcon, url: "https://twitter.com/megacoop" },
-  { icon: instaIcon, url: "https://instagram.com/megacoop" },
-  { icon: youtubeIcon, url: "https://youtube.com/@megacoop" },
+  { icon: facebookIcon, url: "https://facebook.com/megacoop", name: "facebook" },
+  { icon: twitterIcon, url: "https://twitter.com/SocietyMega", name: "twitter" },
+  { icon: instaIcon, url: "https://instagram.com/megacoopng", name: "instagram" },
+  { icon: youtubeIcon, url: "https://youtube.com/@megacoop", name: "youtube" },
 ];
 
 const Footer = () => {
@@ -35,7 +38,7 @@ const Footer = () => {
       <div className="max-w-[1280px] mx-auto relative px-4 flex gap-10 justify-between flex-col md:flex-row py-8">
         <Card className="p-0 bg-transparent border-none shadow-none">
           <Link to="/" className="flex items-center">
-            <img src={Logo} alt="MegaCoop logo" />
+            <img src={Logo} alt="MegaCoop logo" width="221" height="81" />
           </Link>
           <CardHeader className="p-0">
             <CardTitle className="font-manrope font-semibold">
@@ -48,9 +51,11 @@ const Footer = () => {
 
           <CardContent className="px-2 bg-whitebg rounded-full flex items-center py-2">
             <Mail className="text-footertext" />
+            <Label htmlFor="newsletter-email" className="sr-only">Email Address</Label>
             <Input
               type="text"
               placeholder="Enter your email"
+              aria-label="Enter your email address"
               className=" bg-transparent border-none shadow-none focus-visible:ring-0 font-inter"
             />
             <Button className="bg-dark hover:bg-dark font-manrope rounded-full">
@@ -78,7 +83,6 @@ const Footer = () => {
           </ul>
           <ul className="font-inter text-footertext flex flex-col gap-4">
             <h3 className="font-manrope font-bold text-dark">Products</h3>
-              <li ><Link to="/" className="hover:text-megagreen">Mobile App</Link></li>
               <li><Link to="/" className="hover:text-megagreen">Projects</Link></li>
              
           </ul>
@@ -86,7 +90,6 @@ const Footer = () => {
             <h3 className="font-manrope font-bold text-dark">Company</h3>
               <li ><Link to="/about" className="hover:text-megagreen">About</Link></li>
               <li><Link to="/privacy-policy" className="hover:text-megagreen">Privacy Policy</Link></li>
-              <li><Link to="/" className="hover:text-megagreen">Support</Link></li>
               <li><Link to="/" className="hover:text-megagreen">Terms of Service</Link></li>
           </ul>
          
@@ -105,7 +108,14 @@ const Footer = () => {
                 rel="noopener noreferrer"
                 className="bg-whitebg rounded-full p-2 hover:opacity-80 transition"
               >
-                <img src={social.icon} alt={`social-icon-${index}`} />
+                <img 
+                  src={social.icon} 
+                  alt={`${social.name}-icon`} 
+                  width="20" 
+                  height="20"
+                  loading="lazy" 
+                  decoding="async"
+                />
               </a>
             ))}
           </div>

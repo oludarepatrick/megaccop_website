@@ -10,6 +10,7 @@ const Services = lazy(()=> import("./pages/Services"));
 const Contact = lazy(() => import("./pages/Contact"));
 const SignUp = lazy(() => import("./pages/SignUp"));
 const TermsAndConditions = lazy(() => import("./pages/TermsAndConditions"));
+const PrivacyPolicy = lazy(() => import("./pages/PrivacyPolicy"));
 
 
 const suspenseHandler = (Component: LazyExoticComponent<ComponentType>) => (
@@ -31,7 +32,7 @@ export const router = createBrowserRouter([
             { path: "signup", element: suspenseHandler(SignUp) },
             { path: "login", element: suspenseHandler(SignUp) },
             { path: "terms-and-conditions", element: suspenseHandler(TermsAndConditions) },
-            
+            { path: "privacy-policy", element: suspenseHandler(PrivacyPolicy) },
         ],
         errorElement: <NotFound/>
         

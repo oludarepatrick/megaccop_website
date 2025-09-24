@@ -1,4 +1,4 @@
-import mobileImg from "../assets/mobile-app-2.png"
+import mobileImg from "../assets/mobile-app-2.webp"
 import Highlight from "./Highlight"
 import icon1 from "../assets/bank-icon.svg";
 import icon2 from "../assets/support-icon.svg";
@@ -61,7 +61,7 @@ const memberBenefits = [
                     </ul>
                 </header>
                 <div className="w-full flex item-center justify-center ">
-                    <img src={mobileImg} alt="mobile-app"  />
+                    <img src={mobileImg} alt="mobile-app" loading="lazy"  />
                 </div>
             </div>
 

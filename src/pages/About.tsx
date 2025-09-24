@@ -16,62 +16,36 @@ const About = () => {
         window.scrollTo(0, 0);
     }, []);
     
-    // Animation variants
-    const ease: [number, number, number, number] = [0.22, 1, 0.36, 1];
-
-    
-    const containerVariants: Variants = {
-        hidden: { opacity: 0 },
-        show: {
-            opacity: 1,
-            transition: {
-                duration: 0.5,
-                staggerChildren: 0.1,
-                ease
-            }
-        }
-    };
-    
-    const itemVariants: Variants = {
-        hidden: { opacity: 0, y: 20 },
-        show: {
-            opacity: 1,
+    const aboutVariants: Variants = {
+        hidden: { opacity: 0, y: 30 },
+        show: { 
+            opacity: 1, 
             y: 0,
-            transition: {
+            transition: { 
                 duration: 0.6,
-                ease
+                ease: [0.22, 1, 0.36, 1]
             }
         }
     };
     
     return(
-        <motion.div
+        <>
+            <motion.div
             initial="hidden"
             animate="show"
-            variants={containerVariants}
-        >
-            <motion.div variants={itemVariants}>
+            variants={aboutVariants}
+            >
                 <AboutIntro/>
             </motion.div>
-            <motion.div variants={itemVariants}>
-                <WhoWeAre/>
-            </motion.div>
-            <motion.div variants={itemVariants}>
-                <Mission/>
-            </motion.div>
-            <motion.div variants={itemVariants}>
-                <Offer/>
-            </motion.div>
-            <motion.div variants={itemVariants}>
-                <OurTeams/>
-            </motion.div>
-            <motion.div variants={itemVariants}>
-                <Testimonials/>
-            </motion.div>
-            <motion.div variants={itemVariants}>
-                <Download/>
-            </motion.div>
-        </motion.div>
+            
+            <WhoWeAre/>
+            <Mission/>
+            <Offer/>
+            <OurTeams/>
+            <Testimonials/>
+            <Download/>
+        </>
+        
     )
 }
 export default About;

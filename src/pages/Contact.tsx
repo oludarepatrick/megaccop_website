@@ -334,7 +334,7 @@ export default function Contact() {
           </a>
 
           <a
-            href="https://instagram.com"
+            href="https://instagram.com/megacoopng"
             target="_blank"
             rel="noreferrer"
             className="w-10 h-10 rounded-full border border-black/20 flex items-center justify-center hover:bg-black/6 transition mb-1 sm:mb-0"
@@ -344,7 +344,7 @@ export default function Contact() {
           </a>
 
           <a
-            href="https://twitter.com"
+            href="https://twitter.com/SocietyMega"
             target="_blank"
             rel="noreferrer"
             className="w-10 h-10 rounded-full border border-black/20 flex items-center justify-center hover:bg-black/6 transition sm:mb-1"

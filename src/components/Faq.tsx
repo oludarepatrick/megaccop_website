@@ -92,10 +92,10 @@ const Faq = () => {
             </div>
 
             <div className="absolute left-0 bottom-10">
-                <img src={elipsis1} className="object-contain" />
+                <img src={elipsis1} alt="" aria-hidden="true" className="object-contain" loading="lazy" />
             </div> 
             <div className="absolute top-0 right-0">
-                <img src={elipsis2} className="object-contain" />
+                <img src={elipsis2} alt="" aria-hidden="true" className="object-contain" loading="lazy" />
             </div> 
 
         </section>
