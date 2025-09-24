@@ -91,9 +91,9 @@ export default function Contact() {
       if (!response.ok) {
         throw new Error("Network response was not ok");
       } else {
-        setMessage("Message sent successfully!");
+        setMessage("✅ Message sent — we'll be in touch.");
       }
-      setMessage(null);
+      setTimeout(() => setMessage(null), 4000);
       recaptchaRef.current?.reset();
 
       reset();
