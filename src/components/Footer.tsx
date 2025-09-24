@@ -20,9 +20,9 @@ import { Label } from "./ui/label";
 
 
 const socialIcons = [
-  { icon: facebookIcon, url: "https://wa.me/2348076743972", name: "facebook" },
-  { icon: twitterIcon, url: "https://x.com/SocietyMega", name: "twitter" },
-  { icon: instaIcon, url: "https://www.instagram.com/megacoopng", name: "instagram" },
+  { icon: facebookIcon, url: "https://facebook.com/megacoop", name: "facebook" },
+  { icon: twitterIcon, url: "https://twitter.com/SocietyMega", name: "twitter" },
+  { icon: instaIcon, url: "https://instagram.com/megacoopng", name: "instagram" },
   { icon: youtubeIcon, url: "https://youtube.com/@megacoop", name: "youtube" },
 ];
 
