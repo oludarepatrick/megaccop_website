@@ -75,7 +75,7 @@ export default function TermsAndConditions() {
         //   ref={pageScrollRef}
         >
             {/* hero section */}
-            <div className="relative top-[-95px] h-100 w-full bg-cover bg-center object-cover" style={{ backgroundImage: `url(${herosectionimage})` }}>
+            <div className="relative top-[-105px] h-100 w-full bg-cover bg-center object-cover" style={{ backgroundImage: `url(${herosectionimage})` }}>
                 <h2 className="absolute inset-0 bg-black/50 flex items-center justify-center text-white text-3xl lg:text-5xl font-semibold">Terms And Conditions</h2>
             </div>
             {/* Mobile Menu Button */}
@@ -90,7 +90,7 @@ export default function TermsAndConditions() {
                 </Button>
             </div>
 
-            <div className="flex mt-[-90px]">
+            <div className="flex mt-[-100px]">
                 {/* Sidebar */}
                 <aside
                     className={`
