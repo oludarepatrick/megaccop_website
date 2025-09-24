@@ -20,9 +20,9 @@ import { Label } from "./ui/label";
 
 
 const socialIcons = [
-  { icon: facebookIcon, url: "https://facebook.com/megacoop", name: "facebook" },
-  { icon: twitterIcon, url: "https://twitter.com/megacoop", name: "twitter" },
-  { icon: instaIcon, url: "https://instagram.com/megacoop", name: "instagram" },
+  { icon: facebookIcon, url: "https://wa.me/2348076743972", name: "facebook" },
+  { icon: twitterIcon, url: "https://x.com/SocietyMega", name: "twitter" },
+  { icon: instaIcon, url: "https://www.instagram.com/megacoopng", name: "instagram" },
   { icon: youtubeIcon, url: "https://youtube.com/@megacoop", name: "youtube" },
 ];
 
@@ -82,6 +82,7 @@ const Footer = () => {
           <ul className="font-inter text-footertext flex flex-col gap-4">
             <h3 className="font-manrope font-bold text-dark">Company</h3>
               <li ><Link to="/about" className="hover:text-megagreen">About</Link></li>
+              <li ><Link to="/our-teams" className="hover:text-megagreen">Our Teams</Link></li>
               <li><Link to="/privacy-policy" className="hover:text-megagreen">Privacy Policy</Link></li>
               <li><Link to="/" className="hover:text-megagreen">Terms of Service</Link></li>
           </ul>
