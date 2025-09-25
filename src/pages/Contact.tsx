@@ -66,6 +66,7 @@ export default function Contact() {
   });
 
   const [captchaToken, setCaptchaToken] = useState<string | null>(null);
+  const [message, setMessage] = useState<string | null>(null);
 
   const onCaptchaChange = (token: string | null) => {
     setCaptchaToken(token);
@@ -77,19 +78,28 @@ export default function Contact() {
 
   const onSubmit = async (data: ContactFormData) => {
     if (!captchaToken) {
-      alert("Please verify that you're not a robot.");
+      setMessage("Please verify that you're not a robot.");
       return;
     }
     try {
       // backend API to send email
-      await fetch("/api/contact", {
+      const response = await fetch("/api/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ ...data, captchaToken }),
       });
+      if (!response.ok) {
+        throw new Error("Network response was not ok");
+      } else {
+        setMessage("✅ Message sent — we'll be in touch.");
+      }
+      setTimeout(() => setMessage(null), 4000);
+      recaptchaRef.current?.reset();
+
       reset();
     } catch (err) {
       console.error("Failed to send message", err);
+      setMessage("Failed to send message. Please try again later.");
       // show UI error handling as needed
     }
   };
@@ -281,10 +291,21 @@ export default function Contact() {
                       {isSubmitting ? "Sending..." : "Leave us a Message →"}
                     </Button>
 
-                    {isSubmitSuccessful && (
+                    {/* {isSubmitSuccessful && (
                       <p className="text-green-400 text-sm mt-3">
                         ✅ Message sent — we'll be in touch.
                       </p>
+                    )} */}
+                    {message && (
+                      <div
+                        className={`mt-3 text-sm ${
+                          message.includes("success")
+                            ? "text-green-400"
+                            : "text-rose-400"
+                        }`}
+                      >
+                        {message}
+                      </div>
                     )}
                   </div>
                 </form>

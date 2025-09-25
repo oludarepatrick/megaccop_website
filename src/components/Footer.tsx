@@ -1,6 +1,7 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import Logo from "/Logo.svg";
 // import Logo from "/Megacoop-logo.svg";
+
 import {
   Card,
   CardContent,
@@ -27,8 +28,13 @@ const socialIcons = [
 ];
 
 const Footer = () => {
+  const location = useLocation();
   return (
-    <footer className="container mx-auto pt-40 bg-greybg ">
+    <footer
+      
+      className={`bg-greybg mx-auto ${location.pathname === "/" || location.pathname === "/services" || location.pathname === "/about" ? "pt-40" : "pt-0"}`}
+
+    >
       <div className="max-w-[1280px] mx-auto relative px-4 flex gap-10 justify-between flex-col md:flex-row py-8">
         <Card className="p-0 bg-transparent border-none shadow-none">
           <Link to="/" className="flex items-center">
@@ -59,7 +65,8 @@ const Footer = () => {
 
           <CardFooter className="font-inter text-xs text-footertext p-0">
             <p>
-              By subscribing you agree to with our
+              By subscribing you agree with our 
+              <Link to="terms-and-conditions" className="underline text-dark font-medium"> Terms & Conditions</Link> and
               <Link to="privacy-policy" className="underline text-dark font-medium pl-2"> Privacy Policy</Link>
             </p>
           </CardFooter>
