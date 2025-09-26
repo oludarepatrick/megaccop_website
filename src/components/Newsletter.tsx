@@ -58,7 +58,7 @@ export default function ContactSection() {
         <div>
           <h3 className="font-semibold text-lg text-black">Email Address</h3>
           <div className="w-6 h-0.5 bg-black my-2" />
-          <p className="font-semibold text-black">help@info.com</p>
+          <p className="font-semibold text-black">info@megacoop.com</p>
           <p className="text-gray-600 text-sm mt-2">
             Assistance hours: <br /> Monday – Friday 6 am to 8 pm EST
           </p>
@@ -68,7 +68,7 @@ export default function ContactSection() {
         <div>
           <h3 className="font-semibold text-lg text-black">Number</h3>
           <div className="w-6 h-0.5 bg-black my-2" />
-          <p className="font-semibold text-black">(808) 998–34256</p>
+          <p className="font-semibold text-black">08076743972</p>
           <p className="text-gray-600 text-sm mt-2">
             Assistance hours: <br /> Monday – Friday 6 am to 8 pm EST
           </p>

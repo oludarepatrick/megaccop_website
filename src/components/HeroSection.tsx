@@ -10,7 +10,7 @@ import heroReceipt4 from "../assets/hero-receipt-4.webp";
 
 const HeroSection = () => {
     return (
-        <section className="container mx-auto bg-greybg pt-40 relative -top-25 px-8">
+        <section className="container mx-auto bg-greybg pt-40 relative -top-28 px-8">
             <div className="max-w-4xl mx-auto flex flex-col justify-center items-center text-center">
                 <div className="flex items-center">
                     <div className="bg-whitebg rounded-full p-2">
