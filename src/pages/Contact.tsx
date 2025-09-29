@@ -13,8 +13,10 @@ import { Facebook, Instagram, Twitter } from "lucide-react";
 import ContactSection from "@/components/Newsletter";
 
 
+
 const siteKey = import.meta.env.VITE_RECAPTCHA_SITE_KEY;
-console.log("SITE KEY:", import.meta.env.VITE_RECAPTCHA_SITE_KEY);
+const baseUrl = import.meta.env.VITE_BASE_API_URL || "http://34.170.169.65/api/v1";
+
 
 
 const contactSchema = z.object({
@@ -85,11 +87,15 @@ export default function Contact() {
     }
     try {
       // backend API to send email
-      const response = await fetch("/api/contact", {
+      const response = await fetch(`${baseUrl}/contact`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ ...data, captchaToken }),
+        body: JSON.stringify({
+          ...data,
+          "g-recaptcha-response": captchaToken,
+        }),
       });
+      console.log("Response:", response);
       if (!response.ok) {
         throw new Error("Network response was not ok");
       } else {
