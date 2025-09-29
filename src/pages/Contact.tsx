@@ -14,6 +14,8 @@ import ContactSection from "@/components/Newsletter";
 
 
 const siteKey = import.meta.env.VITE_RECAPTCHA_SITE_KEY;
+console.log("SITE KEY:", import.meta.env.VITE_RECAPTCHA_SITE_KEY);
+
 
 const contactSchema = z.object({
   name: z.string().min(2, "Please enter your name"),
