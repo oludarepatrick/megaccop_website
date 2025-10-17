@@ -11,6 +11,7 @@ import {
   DialogTitle,
   DialogDescription,
   DialogFooter,
+  DialogClose,
   
 } from "@/components/ui/dialog";
 import calculatorImage from "@/assets/housingCalculator-image.png";
@@ -207,15 +208,25 @@ export default function HousingContributionCalculator(): JSX.Element {
 
       {/* Result Modal */}
       <Dialog open={open} onOpenChange={setOpen}>
-        <DialogContent className="sm:max-w-3xl max-w-xl rounded-2xl p-6">
+        <DialogContent className=" sm:max-w-3xl max-w-xl rounded-2xl p-6">
+            <DialogClose asChild>
+                  <Button
+                    //   data-dialog-close
+                    //   onClick={() => setOpen(false)}
+                      className="absolute right-2 top-2 w-8 h-8 bg-emerald-600 z-10 text-white rounded-full p-2 hover:bg-emerald-700 transition-transform hover:scale-105"
+                  >
+                      ✕
+                  </Button>
+            </DialogClose>
           <DialogHeader>
-            <DialogTitle className="text-lg font-semibold text-emerald-600">Housing Contributions</DialogTitle>
-            <DialogDescription className="text-sm text-muted-foreground">
+            
+            <DialogTitle className="text-lg font-semibold text-emerald-600 text-center">Housing Contributions</DialogTitle>
+            <DialogDescription className="text-sm text-muted-foreground text-center">
               Review your calculated contributions
             </DialogDescription>
           </DialogHeader>
 
-          <div className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
+          <div className="mt-6 grid grid-cols-1 md:grid-cols-2 w-full max-w-lg mx-auto gap-6 items-center">
             {/* Left image */}
             <div className="flex items-center justify-center">
               <img
@@ -229,34 +240,34 @@ export default function HousingContributionCalculator(): JSX.Element {
             <div className="space-y-3 text-left">
               {calculation ? (
                 <>
-                  <div className="flex justify-between">
-                    <p className="text-sm text-gray-600">Program name:</p>
-                    <p className="font-semibold text-emerald-600">{calculation.programLabel.split(" - ")[0]}</p>
+                  <div className="flex items-center"> 
+                    <p className="text-sm text-gray-600 w-1/2 ">Program name:</p>
+                    <p className="font-semibold text-emerald-600">{calculation.programLabel.split("(")[0]}</p>
                   </div>
 
-                  <div className="flex justify-between">
-                    <p className="text-sm text-gray-600">Initial Deposit:</p>
-                    <p className="font-semibold">{formatCurrency(calculation.initialDeposit)}</p>
+                  <div className="flex items-center">
+                    <p className="text-sm text-gray-600 w-1/2">Initial Deposit:</p>
+                    <p className="font-semibold text-emerald-600">{formatCurrency(calculation.initialDeposit)}</p>
                   </div>
 
-                  <div className="flex justify-between">
-                    <p className="text-sm text-gray-600">Interest rate:</p>
-                    <p className="font-semibold">10%</p>
+                  <div className="flex items-center">
+                    <p className="text-sm text-gray-600 w-1/2">Interest rate:</p>
+                    <p className="font-semibold text-emerald-600">10%</p>
                   </div>
 
-                  <div className="flex justify-between">
-                    <p className="text-sm text-gray-600">Monthly payment:</p>
-                    <p className="font-semibold">{formatCurrency(calculation.monthlyPayment)}</p>
+                  <div className="flex items-center">
+                    <p className="text-sm text-gray-600 w-1/2">Monthly payment:</p>
+                    <p className="font-semibold text-emerald-600">{formatCurrency(calculation.monthlyPayment)}</p>
                   </div>
 
-                  <div className="flex justify-between">
-                    <p className="text-sm text-gray-600">Payment Duration:</p>
-                    <p className="font-semibold">{calculation.paymentDurationFormatted}</p>
+                  <div className="flex items-center">
+                    <p className="text-sm text-gray-600 w-1/2">Payment Duration:</p>
+                    <p className="font-semibold text-emerald-600">{calculation.paymentDurationFormatted}</p>
                   </div>
 
-                  <div className="flex justify-between">
-                    <p className="text-sm text-gray-600">Total Payable:</p>
-                    <p className="font-semibold">{formatCurrency(calculation.totalPayable)}</p>
+                  <div className="flex items-center">
+                    <p className="text-sm text-gray-600 w-1/2">Total Payable:</p>
+                    <p className="font-semibold text-emerald-600">{formatCurrency(calculation.totalPayable)}</p>
                   </div>
                 </>
               ) : (
@@ -265,20 +276,21 @@ export default function HousingContributionCalculator(): JSX.Element {
             </div>
           </div>
 
-          <DialogFooter className="mt-6 flex justify-between items-center">
-            <div className="text-sm text-muted-foreground">You can copy or save this plan.</div>
+          <DialogFooter className="mt-6 flex justify-center items-center">
+            <div className="text-sm text-muted-foreground text-center">Note: This is just a rough estimate contact us for more detailed analysis.</div>
             <div className="flex gap-2">
-              <Button variant="ghost" onClick={() => setOpen(false)}>
-                Close
+              {/* <Button variant="ghost" onClick={() => setOpen(false)}>
+                
               </Button>
               <Button
                 onClick={() => {
                   // future: export or save
                   setOpen(false);
                 }}
+                variant="ghost"
               >
-                Confirm
-              </Button>
+                
+              </Button> */}
             </div>
           </DialogFooter>
         </DialogContent>
