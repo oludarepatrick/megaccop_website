@@ -107,7 +107,7 @@ const TeamMemberCard = ({ member, index }: { member: typeof teamList[0], index: 
     return (
         <motion.li 
             key={index} 
-            className="max-w-[350px] w-full flex flex-col gap-4 items-start lg:text-left bg-whitebg shadow-xl rounded-xl p-6"
+            className="max-w-[350px] w-full flex flex-col gap-4 self-start lg:text-left bg-whitebg shadow-xl rounded-xl p-6"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: index * 0.1 }}
@@ -168,7 +168,7 @@ const Teams = () => {
                     </h2>
                 </div>
                 
-                <ul className="max-w-[1200px] mx-auto pb-20 flex gap-8 justify-center flex-wrap">
+                <ul className="max-w-[1200px] mx-auto pb-20 flex gap-8 justify-center items-center flex-wrap">
                     {teamList.map((member, index) => (
                         <TeamMemberCard key={index} member={member} index={index} />
                     ))}

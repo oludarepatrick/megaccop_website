@@ -3,7 +3,7 @@ import IntroBcg from "../assets/about-bcg.webp";
 
 const AboutIntro = () => {
     return (
-        <section className="container mx-auto bg pt-40 relative -top-25 px-8 py-20 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: `url(${IntroBcg})`}}>
+        <section className="container mx-auto bg pt-40 relative -top-27 px-8 py-20 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: `url(${IntroBcg})`}}>
             <div className="max-w-4xl mx-auto text-center py-20">
                 <motion.h1 
                     initial={{ opacity: 0, y: -20 }}

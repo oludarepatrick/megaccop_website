@@ -65,9 +65,9 @@ const Footer = () => {
 
           <CardFooter className="font-inter text-xs text-footertext p-0">
             <p>
-              By subscribing you agree with our 
+              By subscribing you agree with our
               <Link to="terms-and-conditions" className="underline text-dark font-medium"> Terms & Conditions</Link> and
-              <Link to="privacy-policy" className="underline text-dark font-medium pl-2"> Privacy Policy</Link>
+              <Link to="privacy-policy" className="underline text-dark font-medium pl-2">Privacy Policy</Link>
             </p>
           </CardFooter>
         </Card>
@@ -91,7 +91,7 @@ const Footer = () => {
               <li ><Link to="/about" className="hover:text-megagreen">About</Link></li>
               <li ><Link to="/our-teams" className="hover:text-megagreen">Our Teams</Link></li>
               <li><Link to="/privacy-policy" className="hover:text-megagreen">Privacy Policy</Link></li>
-              <li><Link to="/" className="hover:text-megagreen">Terms of Service</Link></li>
+              <li><Link to="terms-and-conditions/" className="hover:text-megagreen">Terms of Service</Link></li>
           </ul>
          
         </nav>
