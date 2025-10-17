@@ -94,7 +94,7 @@ export default function TermsAndConditions() {
                 {/* Sidebar */}
                 <aside
                     className={`
-          fixed lg:sticky top-0 left-0 h-screen w-93 bg-background border-r border-border overflow-y-auto z-140 transition-transform duration-300
+          fixed lg:sticky top-0 left-0 h-screen w-93 bg-background border-r border-border overflow-y-auto z-40 transition-transform duration-300
           ${isMobileMenuOpen ? "translate-x-0" : "-translate-x-full lg:translate-x-0"}
         `}
                 >

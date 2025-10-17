@@ -12,6 +12,7 @@ const SignUp = lazy(() => import("./pages/SignUp"));
 const TermsAndConditions = lazy(() => import("./pages/TermsAndConditions"));
 const PrivacyPolicy = lazy(() => import("./pages/PrivacyPolicy"));
 const Teams = lazy(() => import("./pages/Teams"));
+const Invest = lazy(() => import("./pages/Invest"));
 
 const suspenseHandler = (Component: LazyExoticComponent<ComponentType>) => (
   <Suspense fallback={<LoadingSpinner />}>
@@ -33,6 +34,7 @@ export const router = createBrowserRouter([
       { path: "terms-and-conditions", element: suspenseHandler(TermsAndConditions) },
       { path: "privacy-policy", element: suspenseHandler(PrivacyPolicy) },
       { path: "our-teams", element: suspenseHandler(Teams) },
+      { path: "invest", element: suspenseHandler(Invest) },
     ],
     errorElement: <NotFound />,
   },

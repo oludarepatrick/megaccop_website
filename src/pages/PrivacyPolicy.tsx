@@ -111,34 +111,28 @@ export default function PrivacyPolicy() {
         </Button>
       </div>
 
-      <div className="flex mt-[-100px]">
-        {/* Sidebar */}
-        <aside
-          className={`
-          fixed lg:sticky top-0 left-0 h-screen w-90 bg-background border-r border-border overflow-y-auto z-10 transition-transform duration-300
-          ${
-            isMobileMenuOpen
-              ? "translate-x-0"
-              : "-translate-x-full lg:translate-x-0"
-          }
+            <div className="flex mt-[-100px]">
+                {/* Sidebar */}
+                <aside
+                    className={`
+          fixed lg:sticky top-0 left-0 h-screen w-90 bg-background border-r border-border overflow-y-auto z-40 transition-transform duration-300
+          ${isMobileMenuOpen ? "translate-x-0" : "-translate-x-full lg:translate-x-0"}
         `}
-        >
-          <div className="p-6">
-            <div className="mb-6">
-              <Badge
-                variant="secondary"
-                className="text-green-600 bg-green-50 border-green-200"
-              >
-                Privacy Notice
-              </Badge>
-            </div>
+                >
+                    <div className="p-6">
+                        <div className="mb-6">
+                            <Badge variant="secondary" className="text-green-600 bg-green-50 border-green-200">
+                                Privacy Notice
+                            </Badge>
 
-            <nav className="space-y-2 border-b">
-              {sections.map((section) => (
-                <Button
-                  key={section.id}
-                  variant="ghost"
-                  className={`
+                        </div>
+
+                        <nav className="space-y-2 border-b">
+                            {sections.map((section) => (
+                                <Button
+                                    key={section.id}
+                                    variant="ghost"
+                                    className={`
                     w-full justify-start text-left h-auto px-1 py-4 rounded-[4px] transition-all duration-200
                     ${
                       activeSection === section.id
