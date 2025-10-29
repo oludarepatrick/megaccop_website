@@ -10,7 +10,7 @@ import { motion } from "framer-motion";
 
 const InvestmentFaq = () => {
     return (
-        <section className="overflow-hidden w-full mx-auto relative top-[-25px] py-20 px-4 ">
+        <section className="container overflow-hidden w-full mx-auto relative top-[-25px] py-20 px-4 ">
             <div className="max-w-[559px] mx-auto text-center flex flex-col justify-center items-center relative z-[5]">
                 <h2 className="font-poppins text-green-600 text-3xl md:text-[40px] font-medium mb-8 max-w-[359px]">
                     Frequently Asked Questions
@@ -104,7 +104,7 @@ const InvestmentFaq = () => {
             <motion.div
                 // animate={{ scale: [1, 1.1, 1] }}
                 // transition={{ repeat: Infinity, duration: 8, ease: "linear" }}
-                className="absolute top-[-130px] right-[-200px] h-[600px] w-[600px] rounded-full bg-transparent border-[100px] border-[#0F7033] opacity-30 z-[0]"
+                className="absolute top-[-130px] right-[-200px] xl:right-[0px] h-[600px] w-[600px] rounded-full bg-transparent border-[100px] border-[#0F7033] opacity-30 z-[0]"
             />
 
         </section>
