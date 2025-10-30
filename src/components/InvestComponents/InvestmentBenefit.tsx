@@ -71,7 +71,7 @@ export default function InvestServices() {
             </motion.div>
 
             {/* Pooled Investment Products */}
-            <div className="w-full shadow-md bg-white flex flex-col items-center justify-center z-10 rounded-tl-[2rem] rounded-tr-[2rem] rounded-br-[2rem] rounded-bl-[6rem]">
+            <div className="container w-full shadow-md bg-white flex flex-col items-center justify-center z-10 rounded-tl-[2rem] rounded-tr-[2rem] rounded-br-[2rem] rounded-bl-[6rem]">
 
                 <h4 className="text-xl md:text-4xl font-semibold text-gray-900 py-6 text-center">
                     Pooled Investment Products
@@ -194,7 +194,7 @@ export default function InvestServices() {
             </div>
 
             {/* Housing Project Investments */}
-            <div className="w-full shadow-md bg-white flex flex-col items-center justify-center z-10 rounded-tl-[6rem] rounded-tr-[2rem] rounded-br-[2rem] rounded-bl-[2rem]">
+            <div className="container w-full shadow-md bg-white flex flex-col items-center justify-center z-10 rounded-tl-[6rem] rounded-tr-[2rem] rounded-br-[2rem] rounded-bl-[2rem]">
 
                 <h4 className="text-lg md:text-4xl font-semibold text-gray-900 py-6 pl-4 text-center">
                     Housing Project Investments
