@@ -74,8 +74,9 @@ export default function HousingContributionCalculator(): JSX.Element {
   const sliderRange = useMemo(() => {
     if (!programObj || monthlyIncomeNum <= 0) return null;
     const min = Math.round(monthlyIncomeNum * programObj.minPercent);
-    const max = Math.round(monthlyIncomeNum * programObj.maxPercent);
-    return { min, max, minPercent: programObj.minPercent, maxPercent: programObj.maxPercent };
+    const max2 = Math.round(monthlyIncomeNum * programObj.maxPercent);
+    const max = Math.round(monthlyIncomeNum * 1.0); // allow up to 100% of salary
+    return { min, max, max2, minPercent: programObj.minPercent, maxPercent: programObj.maxPercent };
   }, [programObj, monthlyIncomeNum]);
 
   // Enable slider only when salary > 0 and program chosen
@@ -402,11 +403,11 @@ export default function HousingContributionCalculator(): JSX.Element {
               <>
                 <div className="flex items-center justify-between mb-2 gap-0 sm:gap-4">
                   <div className="text-xs text-muted-foreground w-1/2 flex flex-col flex-wrap">
-                    Range: {formatCurrency(sliderRange.min)} — {formatCurrency(sliderRange.max)} ({(sliderRange.minPercent * 100).toFixed(2)}% —{" "}
+                    Range: {formatCurrency(sliderRange.min)} — {formatCurrency(sliderRange.max2)} ({(sliderRange.minPercent * 100).toFixed(2)}% —{" "}
                     {(sliderRange.maxPercent * 100).toFixed(0)}% of salary)
                   </div>
                   <div className="text-sm font-semibold text-emerald-600 w-1/2 sm:w-fit">
-                    Selected: {formatCurrency(sliderValue)} ({((sliderValue / Math.max(1, monthlyIncomeNum)) * 100).toFixed(2)}%)
+                    Selected: {formatCurrency(sliderValue)} ({((sliderValue / Math.max(1, monthlyIncomeNum)) * 100).toFixed(0)}%)
                   </div>
                 </div>
 
