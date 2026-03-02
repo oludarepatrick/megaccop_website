@@ -26,65 +26,147 @@ const Faq = () => {
                     defaultValue="faq-1"
                 >
                     <AccordionItem value="faq-1" className="border-megagreen border-2 rounded-lg p-6 mb-6 font-poppins">
-                        <AccordionTrigger className="text-dark text-lg sm:text-xl">What is Megacoop?</AccordionTrigger>
+                        <AccordionTrigger className="text-dark text-lg sm:text-xl">What is MegaCoop?</AccordionTrigger>
                         <AccordionContent className="p-0 text-[#094D26]">
                             <p>
-                                MegaCoop is a trusted multipurpose app that helps 
-                                members save money, access affordable loans, shop on 
-                                credit, and even apply for housing support all through 
-                                a simple, secure mobile app.
+                                MegaCoop is a trusted multipurpose cooperative platform 
+                                that helps members save money, access affordable loans, 
+                                shop on credit, and apply for housing support — all 
+                                through a simple, secure mobile app. Our mission is to 
+                                make financial tools accessible to every cooperative 
+                                member, with a vision to become the leading digital 
+                                cooperative platform in Africa.
                             </p>
                         </AccordionContent>
-
                     </AccordionItem>
+
                     <AccordionItem value="faq-2" className="border-megagreen border-2 rounded-lg p-6 mb-6 font-poppins">
-                        <AccordionTrigger className="text-dark text-lg sm:text-xl">How do I download and install the Megacoop app?</AccordionTrigger>
+                        <AccordionTrigger className="text-dark text-lg sm:text-xl">What services does MegaCoop offer?</AccordionTrigger>
                         <AccordionContent className="p-0 text-[#094D26]">
                             <p>
-                                MegaCoop is a trusted multipurpose app that helps 
-                                members save money, access affordable loans, shop on 
-                                credit, and even apply for housing support all through 
-                                a simple, secure mobile app.
+                                MegaCoop offers a wide range of financial services including: 
+                                flexible savings plans (save daily, weekly, or monthly), 
+                                quick and fair cooperative loans, a Shop Now Pay Later 
+                                feature for everyday essentials, and access to the National 
+                                Housing Fund (NHF) for government-backed housing loans. 
+                                You can also automate your savings and loan repayments, 
+                                get smart reminders for payment deadlines, and connect 
+                                with guarantors for bigger loans — all from one app.
                             </p>
                         </AccordionContent>
-
                     </AccordionItem>
+
                     <AccordionItem value="faq-3" className="border-megagreen border-2 rounded-lg p-6 mb-6 font-poppins">
                         <AccordionTrigger className="text-dark text-lg sm:text-xl">
-                            Can I transfer money from Megacoop to my bank account?
+                            How do I apply for a loan on MegaCoop?
                         </AccordionTrigger>
                         <AccordionContent className="p-0 text-[#094D26]">
                             <p>
-                                MegaCoop is a trusted multipurpose app that helps 
-                                members save money, access affordable loans, shop on 
-                                credit, and even apply for housing support all through 
-                                a simple, secure mobile app.
+                                Applying for a loan is simple and convenient. Log in to 
+                                the MegaCoop app, navigate to the Loans section, and 
+                                submit your application. Members may borrow up to 500% 
+                                of their account balance, subject to eligibility and 
+                                approval terms.
+                                All loans come with straightforward requirements, 
+                                cooperative-backed support, and transparent repayment 
+                                terms. For higher loan amounts, you may be required to 
+                                add or verify a guarantor directly within the app to improve 
+                                your chances of approval.
+                                You can check your dashboard for more detail guidelines on loan 
+                                eligibility and the application process.
                             </p>
                         </AccordionContent>
                     </AccordionItem>
+
                     <AccordionItem value="faq-4" className="border-megagreen border-2 rounded-lg p-6 mb-6 font-poppins">
                         <AccordionTrigger className="text-dark text-lg sm:text-xl">
-                            Is Megacoop compatible with all types of devices?
+                            Is my money safe with MegaCoop?
                         </AccordionTrigger>
                         <AccordionContent className="p-0 text-[#094D26]">
                             <p>
-                                MegaCoop is a trusted multipurpose app that helps 
-                                members save money, access affordable loans, shop on 
-                                credit, and even apply for housing support all through 
-                                a simple, secure mobile app.
+                                Absolutely. MegaCoop uses bank-grade security to protect 
+                                your data and transactions. All activity is safeguarded 
+                                with encryption and secure login, so you can enjoy 
+                                instant payments and manage your finances with complete 
+                                peace of mind. Your trust and security are our top 
+                                priorities.
                             </p>
                         </AccordionContent>
                     </AccordionItem>
+
                     <AccordionItem value="faq-5" className="border-megagreen border-2 rounded-lg p-6 mb-6 font-poppins">
                         <AccordionTrigger className="text-dark text-lg sm:text-xl">
-                             How can I contact Megacoop customer support if I encounter issues?
+                            What is the Shop Now, Pay Later feature?
                         </AccordionTrigger>
                         <AccordionContent className="p-0 text-[#094D26]">
                             <p>
-                                MegaCoop is a trusted multipurpose app that helps 
-                                members save money, access affordable loans, shop on 
-                                credit, and even apply for housing support all through 
-                                a simple, secure mobile app.
+                                With MegaCoop's Shop Now, Pay Later service, you can 
+                                buy essential items — from household goods to gadgets — 
+                                instantly and spread your payments over time. There's no 
+                                stress of upfront costs, making it easier to access what 
+                                you need when you need it.
+                            </p>
+                        </AccordionContent>
+                    </AccordionItem>
+
+                    <AccordionItem value="faq-6" className="border-megagreen border-2 rounded-lg p-6 mb-6 font-poppins">
+                        <AccordionTrigger className="text-dark text-lg sm:text-xl">
+                            How do I access the National Housing Fund (NHF) through MegaCoop?
+                        </AccordionTrigger>
+                        <AccordionContent className="p-0 text-[#094D26]">
+                            <p>
+                                MegaCoop allows you to apply for government-backed 
+                                housing loans through the National Housing Fund (NHF) 
+                                directly from the app. The NHF offers a 6% interest 
+                                rate per annum with a tenure of up to 30 years. You 
+                                need a minimum of 6 months of contributions to qualify, 
+                                with a contribution rate of 2.5% of your basic salary. 
+                                Maximum loan amount is up to ₦50 million.
+                            </p>
+                        </AccordionContent>
+                    </AccordionItem>
+
+                    <AccordionItem value="faq-7" className="border-megagreen border-2 rounded-lg p-6 mb-6 font-poppins">
+                        <AccordionTrigger className="text-dark text-lg sm:text-xl">
+                            What languages does the MegaCoop app support?
+                        </AccordionTrigger>
+                        <AccordionContent className="p-0 text-[#094D26]">
+                            <p>
+                                MegaCoop is designed to be inclusive and accessible. 
+                                The app currently supports multiple languages including 
+                                English, Yoruba, and Igbo, so you can navigate and use 
+                                the app in your preferred language.
+                            </p>
+                        </AccordionContent>
+                    </AccordionItem>
+
+                    <AccordionItem value="faq-8" className="border-megagreen border-2 rounded-lg p-6 mb-6 font-poppins">
+                        <AccordionTrigger className="text-dark text-lg sm:text-xl">
+                            How to Signup with MegaCoop?
+                        </AccordionTrigger>
+                        <AccordionContent className="p-0 text-[#094D26]">
+                            <p>
+                                To register, click on the Sign Up link and complete the 
+                                registration form. A valid access code is required to proceed. <br/>
+                                Access codes are issued by the administrator upon request. 
+                                Interested individuals must contact the organization to obtain 
+                                an access code, which will be sent via email or SMS once approved.
+                            </p>
+                        </AccordionContent>
+                    </AccordionItem>
+
+                    <AccordionItem value="faq-9" className="border-megagreen border-2 rounded-lg p-6 mb-6 font-poppins">
+                        <AccordionTrigger className="text-dark text-lg sm:text-xl">
+                            How can I contact MegaCoop customer support?
+                        </AccordionTrigger>
+                        <AccordionContent className="p-0 text-[#094D26]">
+                            <p>
+                                You can reach our support team through multiple channels. 
+                                Use the in-app chat feature to connect with real people, 
+                                call our support line, or visit the Contact page on our 
+                                website to send us a message. You can also follow us on 
+                                our social media channels — Facebook, Instagram, X (Twitter), 
+                                and YouTube — for updates and assistance.
                             </p>
                         </AccordionContent>
                     </AccordionItem>

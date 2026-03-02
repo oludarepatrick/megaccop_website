@@ -56,7 +56,7 @@ const ScrollToTop = () => {
             scale: 0.9 
           }}
           onClick={scrollToTop}
-          className="fixed bottom-8 right-8 z-50 w-12 h-12 bg-megagreen hover:bg-green-600 text-white rounded-full shadow-lg hover:shadow-xl flex items-center justify-center transition-all duration-300"
+          className="fixed bottom-8 left-8 z-50 w-12 h-12 bg-megagreen hover:bg-green-600 text-white rounded-full shadow-lg hover:shadow-xl flex items-center justify-center transition-all duration-300"
           aria-label="Scroll to top"
         >
           <ArrowUp className="w-5 h-5" strokeWidth={2.5} />

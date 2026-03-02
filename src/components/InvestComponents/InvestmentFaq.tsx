@@ -30,68 +30,83 @@ const InvestmentFaq = () => {
                     defaultValue="faq-1"
                 >
                     <AccordionItem value="faq-1" className="border-gray-200 border-b-2 rounded-none p-6 mb-6 font-poppins">
-                        <AccordionTrigger className="text-dark text-lg sm:text-xl text-green-600">Lorem ipsum dolor sit amet consterqeur?</AccordionTrigger>
+                        <AccordionTrigger className="text-dark text-lg sm:text-xl text-green-600">What investment options does MegaCoop offer?</AccordionTrigger>
                         <AccordionContent className="p-0 text-[#094D26]">
                             <p>
-                                Web hosting is a data storage service so that a website can be accessed online.
-                                This website data is stored in a storage space called a web hosting server which is always active 24 hours a day.
-                                The quality of web hosting services can determine the success of your business as well as all your website activities.
-                                Without a quality web hosting service, a website may not be accessed properly.
-                                Therefore, always use the best web hosting service for your website
+                                MegaCoop offers two main investment categories: Pooled 
+                                Investment Products and Housing Project Investments. 
+                                Pooled investments start from ₦100,000 with a return of 
+                                16–20% per annum and a 6–24 month lock-up period. Housing 
+                                Project Investments start from ₦500,000 with 15–18% returns 
+                                over 18–36 months. We also offer Housing Fund Programs 
+                                starting from ₦50,000 for home loan access.
                             </p>
                         </AccordionContent>
-
                     </AccordionItem>
+
                     <AccordionItem value="faq-2" className="border-gray-200 border-b-2 rounded-none p-6 mb-6 font-poppins">
-                        <AccordionTrigger className="text-dark text-lg sm:text-xl text-green-600">Lorem ipsum dolor sit amet consterqeur?</AccordionTrigger>
+                        <AccordionTrigger className="text-dark text-lg sm:text-xl text-green-600">What is the minimum amount required to start investing?</AccordionTrigger>
                         <AccordionContent className="p-0 text-[#094D26]">
                             <p>
-                                Web hosting is a data storage service so that a website can be accessed online.
-                                This website data is stored in a storage space called a web hosting server which is always active 24 hours a day.
-                                The quality of web hosting services can determine the success of your business as well as all your website activities.
-                                Without a quality web hosting service, a website may not be accessed properly.
-                                Therefore, always use the best web hosting service for your website
+                                The minimum investment depends on the product you choose. 
+                                For Pooled Investment Products, the minimum is ₦100,000. 
+                                For Housing Project Investments, it starts at ₦500,000. 
+                                If you're interested in the Housing Fund Programs, you 
+                                can start contributing with as little as ₦50,000. The NHF 
+                                program has a minimum contribution of ₦5,000, while the 
+                                MoFi Housing Fund requires a minimum of ₦10,000 per month.
                             </p>
                         </AccordionContent>
-
                     </AccordionItem>
+
                     <AccordionItem value="faq-3" className="border-gray-200 border-b-2 rounded-none p-6 mb-6 font-poppins">
                         <AccordionTrigger className="text-dark text-lg sm:text-xl text-green-600">
-                            Lorem ipsum dolor sit amet consterqeur?
+                            What is the difference between NHF and MoFi Housing Fund?
                         </AccordionTrigger>
                         <AccordionContent className="p-0 text-[#094D26]">
                             <p>
-                                Web hosting is a data storage service so that a website can be accessed online.
-                                This website data is stored in a storage space called a web hosting server which is always active 24 hours a day.
-                                The quality of web hosting services can determine the success of your business as well as all your website activities.
-                                Without a quality web hosting service, a website may not be accessed properly.
-                                Therefore, always use the best web hosting service for your website
+                                The NHF (National Housing Fund) is a government-backed 
+                                program offering 6% interest per annum with tenure up to 
+                                30 years and a maximum loan of ₦50 million. It requires a 
+                                contribution rate of 2.5% of your basic salary with a minimum 
+                                of 6 months. The MoFi Housing Fund is a Real Estate Investment 
+                                Fund with a competitive 9.75% interest rate, flexible contributions 
+                                starting at ₦10,000/month, a 6–12 month period, and loan coverage 
+                                of up to 80% of the property value.
                             </p>
                         </AccordionContent>
                     </AccordionItem>
+
                     <AccordionItem value="faq-4" className="border-gray-200 border-b-2 rounded-none p-6 mb-6 font-poppins">
                         <AccordionTrigger className="text-dark text-lg sm:text-xl text-green-600">
-                            Lorem ipsum dolor sit amet consterqeur?
+                            What are the active housing projects I can invest in?
                         </AccordionTrigger>
                         <AccordionContent className="p-0 text-[#094D26]">
                             <p>
-                                MegaCoop is a trusted multipurpose app that helps
-                                members save money, access affordable loans, shop on
-                                credit, and even apply for housing support all through
-                                a simple, secure mobile app.
+                                MegaCoop currently has several active housing projects 
+                                including Egando Estate in Lekki (80 units), Adonai 
+                                Estate in Ketu (50 units), and Adewale Estate which 
+                                is currently in the finishing stage. These projects 
+                                offer medium-risk investment opportunities with returns 
+                                of 15–18% per annum over an 18–36 month period.
                             </p>
                         </AccordionContent>
                     </AccordionItem>
+
                     <AccordionItem value="faq-5" className="border-gray-200 border-b-2 rounded-none p-6 mb-6 font-poppins">
                         <AccordionTrigger className="text-dark text-lg sm:text-xl text-green-600">
-                            How can I contact Megacoop customer support if I encounter issues?
+                            How does the Housing Contribution Calculator work?
                         </AccordionTrigger>
                         <AccordionContent className="p-0 text-[#094D26]">
                             <p>
-                                MegaCoop is a trusted multipurpose app that helps
-                                members save money, access affordable loans, shop on
-                                credit, and even apply for housing support all through
-                                a simple, secure mobile app.
+                                The Housing Contribution Calculator helps you plan your 
+                                path to homeownership. Simply enter your monthly income, 
+                                target property value, choose a program (NHS or SHS), 
+                                and select a savings period. The calculator will show you 
+                                your initial deposit (30% of property value), monthly 
+                                payment amount, payment duration, and total payable 
+                                amount — so you can make informed decisions about your 
+                                housing investment.
                             </p>
                         </AccordionContent>
                     </AccordionItem>
