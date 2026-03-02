@@ -1,28 +1,30 @@
-import React from "react"
+import React from "react";
 
-import { ChevronRight } from "lucide-react"
-import styles from "./ServiceGrid.module.css"
-import { Card } from "../ui/card"
-import { Button } from "../ui/button"
-import { motion, type Variants } from "framer-motion"
+// import { ChevronRight } from "lucide-react";
+import styles from "./ServiceGrid.module.css";
+import { Card } from "../ui/card";
+// import { Button } from "../ui/button";
+import { motion, type Variants } from "framer-motion";
 import secureIcon from "@/assets/safe-shield-icon.svg";
 
 const services = [
   {
     id: 1,
     title: "Save with Flexible Plans",
-    description: "Set personal savings goals and choose how often you want to save",
+    description:
+      "Set personal savings goals and choose how often you want to save",
     href: "/services/savings",
   },
   {
     id: 2,
     title: "Apply for Loans",
-    description: "Get access to fast, fair, and cooperative loans from your phone",
+    description:
+      "Get access to fast, fair, and cooperative loans from your phone",
     href: "/services/loans",
   },
   {
     id: 3,
-    title: "Shop Now, Pay Late",
+    title: "Shop Now, Pay Later",
     description: "Buy essential items instantly and spread payments over time",
     href: "/services/shop",
   },
@@ -41,13 +43,15 @@ const services = [
   {
     id: 6,
     title: "Get Smart Reminders and Instant Alerts",
-    description: "Be notified about savings deadlines, loan approvals, and more",
+    description:
+      "Be notified about savings deadlines, loan approvals, and more",
     href: "/services/alerts",
   },
   {
     id: 7,
     title: "Easily Add or Verify a Guarantor for Bigger Loans",
-    description: "Increase your loan chances by connecting with trusted guarantors",
+    description:
+      "Increase your loan chances by connecting with trusted guarantors",
     href: "/services/guarantor",
   },
   {
@@ -59,10 +63,11 @@ const services = [
   {
     id: 9,
     title: "Get Support When You Need It",
-    description: "Reach out to real people via in-app chat or call if you ever need help",
+    description:
+      "Reach out to real people via in-app chat or call if you ever need help",
     href: "/services/support",
   },
-]
+];
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -70,23 +75,28 @@ const containerVariants = {
     opacity: 1,
     transition: { staggerChildren: 0.2, delayChildren: 0.2 },
   },
-}
+};
 
 const cardVariants: Variants = {
   hidden: { opacity: 0, y: 30, scale: 0.95 },
-  show: { opacity: 1, y: 0, scale: 1, transition: { duration: 0.5, ease: "easeOut" } },
-}
+  show: {
+    opacity: 1,
+    y: 0,
+    scale: 1,
+    transition: { duration: 0.5, ease: "easeOut" },
+  },
+};
 
 export default function ServiceGrid() {
   const handleCardClick = (href: string) => {
     // Handle navigation or modal opening
-    console.log("Navigate to:", href)
-  }
+    console.log("Navigate to:", href);
+  };
 
-  const handleMoreDetails = (e: React.MouseEvent, href: string) => {
-    e.stopPropagation()
-    console.log("More details for:", href)
-  }
+  // const handleMoreDetails = (e: React.MouseEvent, href: string) => {
+  //   e.stopPropagation();
+  //   console.log("More details for:", href);
+  // };
 
   return (
     <section className=" px-4 bg-muted/30">
@@ -98,11 +108,14 @@ export default function ServiceGrid() {
           transition={{ duration: 0.6 }}
           className="mb-8"
         >
-        
           <div className="flex items-center gap-2 mb-4">
-            <span className="text-orange-400 text-sm font-medium bg-orange-100 p-1 rounded">✦ Our Services</span>
+            <span className="text-orange-400 text-sm font-medium bg-orange-100 p-1 rounded">
+              ✦ Our Services
+            </span>
           </div>
-          <h2 className="text-4xl lg:w-[55%] font-bold ">Financial Solutions That Fit Your Everyday Life</h2>
+          <h2 className="text-4xl lg:w-[55%] font-bold ">
+            Financial Solutions That Fit Your Everyday Life
+          </h2>
         </motion.div>
         {/* Grid Container */}
         <motion.div
@@ -112,23 +125,26 @@ export default function ServiceGrid() {
           whileInView="show"
           viewport={{ once: false, amount: 0.2 }}
         >
-                  {services.map((service) => (
-              <motion.div key={service.id} variants={cardVariants}>
-            <Card className={styles.serviceCard} onClick={() => handleCardClick(service.href)}>
-              <motion.div
+          {services.map((service) => (
+            <motion.div key={service.id} variants={cardVariants}>
+              <Card
+                className={styles.serviceCard}
+                onClick={() => handleCardClick(service.href)}
+              >
+                <motion.div
                   initial={{ scale: 0 }}
                   animate={{ scale: 1 }}
                   transition={{ duration: 0.5, delay: 0.3 }}
                   className="flex items-center justify-center w-12 h-12 bg-violet-50 rounded-full mb-4"
                 >
-                {/* <CircleCheck className="w-6 h-6 text-green-600" /> */}
-                      <img
+                  {/* <CircleCheck className="w-6 h-6 text-green-600" /> */}
+                  <img
                     src={secureIcon}
                     alt="Check Icon"
                     className="w-6 h-6 text-green-600"
                   />
-              </motion.div>
-<motion.h3
+                </motion.div>
+                <motion.h3
                   initial={{ opacity: 0, y: 10 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.4, delay: 0.4 }}
@@ -136,9 +152,8 @@ export default function ServiceGrid() {
                 >
                   {service.title}
                 </motion.h3>
-              
 
-              <motion.p
+                <motion.p
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   transition={{ duration: 0.5, delay: 0.5 }}
@@ -147,7 +162,7 @@ export default function ServiceGrid() {
                   {service.description}
                 </motion.p>
 
-              <motion.div
+                {/* <motion.div 
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   transition={{ duration: 0.5, delay: 0.6 }}
@@ -155,17 +170,19 @@ export default function ServiceGrid() {
                   <Button
                     variant="ghost"
                     className="p-1 h-auto font-medium text-foreground hover:text-primary w-fit"
-                    onClick={(e: React.MouseEvent) => handleMoreDetails(e, service.href)}
+                    onClick={(e: React.MouseEvent) =>
+                      handleMoreDetails(e, service.href)
+                    }
                   >
                     More Details
                     <ChevronRight className="w-4 h-4 ml-1" />
                   </Button>
-                </motion.div>
+                </motion.div> */}
               </Card>
-              </motion.div>
+            </motion.div>
           ))}
         </motion.div>
       </div>
     </section>
-  )
+  );
 }

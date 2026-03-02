@@ -72,7 +72,7 @@ const Footer = () => {
           </CardFooter>
         </Card>
 
-        <nav className="flex  gap-20 gap-y-8 flex-wrap">
+        <nav className="flex gap-20 gap-y-8 flex-wrap">
           <ul className="font-inter text-footertext flex flex-col gap-4">
             <h3 className="font-manrope font-bold text-dark">Quick links</h3>
               <li ><Link to="/" className="hover:text-megagreen">Home</Link></li>
@@ -81,11 +81,11 @@ const Footer = () => {
               <li><Link to="/" className="hover:text-megagreen">Invest</Link></li>
               <li><Link to="/contact" className="hover:text-megagreen">Contact</Link></li>
           </ul>
-          <ul className="font-inter text-footertext flex flex-col gap-4">
+          {/* <ul className="font-inter text-footertext flex flex-col gap-4">
             <h3 className="font-manrope font-bold text-dark">Products</h3>
               <li><Link to="/" className="hover:text-megagreen">Projects</Link></li>
              
-          </ul>
+          </ul> */}
           <ul className="font-inter text-footertext flex flex-col gap-4">
             <h3 className="font-manrope font-bold text-dark">Company</h3>
               <li ><Link to="/about" className="hover:text-megagreen">About</Link></li>
@@ -99,7 +99,7 @@ const Footer = () => {
       <div className="max-w-[1280px] mx-auto px-4">
         <hr/>
         <div className="py-6 flex items-center sm:justify-between flex-wrap gap-10 justify-center">
-          <p className="text-footertext text-sm">Copyright © 2025 Megacoop. All Rights Reserved</p>
+          <p className="text-footertext text-sm">Copyright © {new Date().getFullYear()} Megacoop. All Rights Reserved</p>
           <div className="flex items-center gap-4">
             {socialIcons.map((social, index) => (
               <a
