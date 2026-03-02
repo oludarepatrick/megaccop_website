@@ -32,7 +32,7 @@ const InvestmentHeroSection: React.FC = () => {
   };
 
   return (
-    <section className="relative flex flex-col items-center justify-center text-center px-4 py-20 md:py-28 bg-white ">
+    <section className="relative flex flex-col items-center justify-center text-center px-4 py-20 md:py-28 bg-white container mx-auto">
       {/* Floating background shapes */}
       <motion.img
         src={shapevertical}

@@ -1,4 +1,4 @@
-import { Link, NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { AlignJustify } from "lucide-react";
 import { Button } from "./ui/button";
 import Logo from "/Logo.svg";
