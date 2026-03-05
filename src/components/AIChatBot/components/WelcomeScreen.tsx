@@ -48,7 +48,7 @@ export function WelcomeScreen({ greeting, isStartingSession, chips, onChipClick 
                                         className="w-full justify-start gap-3 h-auto py-3 px-4 rounded-xl border-gray-200
                                                    font-poppins font-normal text-sm text-gray-700
                                                    hover:border-megagreen/40 hover:bg-megagreen/5 hover:text-gray-900
-                                                   group transition-all"
+                                                   group transition-all truncate"
                                     >
                                         <ArrowUpRight className="h-3.5 w-3.5 text-gray-400 group-hover:text-megagreen shrink-0 transition-colors" />
                                         {chip.label}

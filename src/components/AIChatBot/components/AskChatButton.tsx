@@ -16,7 +16,7 @@ export const AskChatButton = ({ onClick, isOpen }: AskChatButtonProps) => {
             className={`fixed bottom-8  right-8 z-50 border-white font-normal
                 bg-megagreen hover:bg-green-600 text-whitebg hover:text-whitebg 
                 font-poppins p-6 rounded-full shadow-lg hover:shadow-xl transition-all duration-200
-                ${isOpen ? "scale-95 shadow-md" : "scale-100"}
+                ${isOpen ? "scale-95 shadow-md hidden" : "scale-100"}
             `}
             >
                 {isOpen ? (
@@ -30,7 +30,7 @@ export const AskChatButton = ({ onClick, isOpen }: AskChatButtonProps) => {
                         <img src="/megacoop-logo-white.svg" alt="" className="w-5" />
                         Ask
                         <span className="hidden md:inline -ml-1">
-                            RukaYat
+                            Jane
                         </span>
                     </span>
                 )}
