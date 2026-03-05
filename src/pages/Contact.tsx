@@ -299,11 +299,11 @@ export default function Contact() {
                       {isSubmitting ? "Sending..." : "Leave us a Message →"}
                     </Button>
 
-                    {/* {isSubmitSuccessful && (
+                    {isSubmitSuccessful && (
                       <p className="text-green-400 text-sm mt-3">
                         ✅ Message sent — we'll be in touch.
                       </p>
-                    )} */}
+                    )}
                     {message && (
                       <div
                         className={`mt-3 text-sm ${
@@ -328,7 +328,7 @@ export default function Contact() {
           whileInView="show"
           variants={iconsVariant}
           viewport={{ once: false, amount: 0.3 }}
-          className="gap-4 md:flex flex-col gap-4 items-center absolute right-6 top-[6%]"
+          className="md:flex flex-col gap-4 items-center absolute right-6 top-[6%]"
           aria-hidden
         >
           <a

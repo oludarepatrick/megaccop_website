@@ -7,6 +7,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "./ui/accordion"
+import { Link } from "react-router-dom"
 
 const Faq = () => {
     return (
@@ -32,7 +33,7 @@ const Faq = () => {
                                 MegaCoop is a trusted multipurpose cooperative platform 
                                 that helps members save money, access affordable loans, 
                                 shop on credit, and apply for housing support — all 
-                                through a simple, secure mobile app. Our mission is to 
+                                through a simple, secure web app. Our mission is to 
                                 make financial tools accessible to every cooperative 
                                 member, with a vision to become the leading digital 
                                 cooperative platform in Africa.
@@ -126,20 +127,6 @@ const Faq = () => {
                         </AccordionContent>
                     </AccordionItem>
 
-                    <AccordionItem value="faq-7" className="border-megagreen border-2 rounded-lg p-6 mb-6 font-poppins">
-                        <AccordionTrigger className="text-dark text-lg sm:text-xl">
-                            What languages does the MegaCoop app support?
-                        </AccordionTrigger>
-                        <AccordionContent className="p-0 text-[#094D26]">
-                            <p>
-                                MegaCoop is designed to be inclusive and accessible. 
-                                The app currently supports multiple languages including 
-                                English, Yoruba, and Igbo, so you can navigate and use 
-                                the app in your preferred language.
-                            </p>
-                        </AccordionContent>
-                    </AccordionItem>
-
                     <AccordionItem value="faq-8" className="border-megagreen border-2 rounded-lg p-6 mb-6 font-poppins">
                         <AccordionTrigger className="text-dark text-lg sm:text-xl">
                             How to Signup with MegaCoop?
@@ -163,7 +150,10 @@ const Faq = () => {
                             <p>
                                 You can reach our support team through multiple channels. 
                                 Use the in-app chat feature to connect with real people, 
-                                call our support line, or visit the Contact page on our 
+                                call our support line, or visit the {' '}
+                                <Link to="/contact" className="text-megagreen hover:underline">
+                                    Contact page
+                                </Link>  on our 
                                 website to send us a message. You can also follow us on 
                                 our social media channels — Facebook, Instagram, X (Twitter), 
                                 and YouTube — for updates and assistance.
