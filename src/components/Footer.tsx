@@ -4,20 +4,20 @@ import Logo from "/Logo.svg";
 
 import {
   Card,
-  CardContent,
+  // CardContent,
   CardDescription,
   CardFooter,
   CardHeader,
   CardTitle,
 } from "./ui/card";
-import { Mail } from "lucide-react";
-import { Input } from "./ui/input";
-import { Button } from "./ui/button";
+// import { Mail } from "lucide-react";
+// import { Input } from "./ui/input";
+// import { Button } from "./ui/button";
 import facebookIcon from "../assets/facebook-icon.svg";
 import twitterIcon from "../assets/twitter-icon.svg";
 import instaIcon from "../assets/insta-icon.svg";
 import youtubeIcon from "../assets/youtube-icon.svg";
-import { Label } from "./ui/label";
+// import { Label } from "./ui/label";
 
 
 const socialIcons = [
@@ -42,14 +42,41 @@ const Footer = () => {
           </Link>
           <CardHeader className="p-0">
             <CardTitle className="font-manrope font-semibold">
+              Sign Up Today
+            </CardTitle>
+            <CardDescription className="text-footertext font-inter">
+              Register today to access all on features and releases.
+            </CardDescription>
+          </CardHeader>
+          <div className="flex items-center gap-4">
+            {socialIcons.map((social, index) => (
+              <a
+                key={index}
+                href={social.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-whitebg rounded-full p-2 hover:opacity-80 transition"
+              >
+                <img 
+                  src={social.icon} 
+                  alt={`${social.name}-icon`} 
+                  width="20" 
+                  height="20"
+                  loading="lazy" 
+                  decoding="async"
+                />
+              </a>
+            ))}
+          </div>
+            {/* <CardTitle className="font-manrope font-semibold">
               Subscribe
             </CardTitle>
             <CardDescription className="text-footertext font-inter">
               Join our newsletter to stay up to date on features and releases.
             </CardDescription>
-          </CardHeader>
+          </CardHeader> */}
 
-          <CardContent className="px-2 bg-whitebg rounded-full flex items-center py-2">
+          {/* <CardContent className="px-2 bg-whitebg rounded-full flex items-center py-2">
             <Mail className="text-footertext" />
             <Label htmlFor="newsletter-email" className="sr-only">Email Address</Label>
             <Input
@@ -61,11 +88,11 @@ const Footer = () => {
             <Button className="bg-dark hover:bg-dark font-manrope rounded-full">
               Subscribe
             </Button>
-          </CardContent>
+          </CardContent> */}
 
           <CardFooter className="font-inter text-xs text-footertext p-0">
             <p>
-              By subscribing you agree with our
+              By subscribing you agree with our {''}
               <Link to="terms-and-conditions" className="underline text-dark font-medium"> Terms & Conditions</Link> and
               <Link to="privacy-policy" className="underline text-dark font-medium pl-2">Privacy Policy</Link>
             </p>
@@ -78,7 +105,7 @@ const Footer = () => {
               <li ><Link to="/" className="hover:text-megagreen">Home</Link></li>
               <li><Link to="/about" className="hover:text-megagreen">About</Link></li>
               <li><Link to="/services" className="hover:text-megagreen">Services</Link></li>
-              <li><Link to="/" className="hover:text-megagreen">Invest</Link></li>
+              <li><Link to="/invest" className="hover:text-megagreen">Invest</Link></li>
               <li><Link to="/contact" className="hover:text-megagreen">Contact</Link></li>
           </ul>
           {/* <ul className="font-inter text-footertext flex flex-col gap-4">

@@ -30,7 +30,7 @@ const InvestmentFaq = () => {
                     defaultValue="faq-1"
                 >
                     <AccordionItem value="faq-1" className="border-gray-200 border-b-2 rounded-none p-6 mb-6 font-poppins">
-                        <AccordionTrigger className="text-dark text-lg sm:text-xl text-green-600">What investment options does MegaCoop offer?</AccordionTrigger>
+                        <AccordionTrigger className="text-lg sm:text-xl text-green-600">What investment options does MegaCoop offer?</AccordionTrigger>
                         <AccordionContent className="p-0 text-[#094D26]">
                             <p>
                                 MegaCoop offers two main investment categories: Pooled 
@@ -45,7 +45,7 @@ const InvestmentFaq = () => {
                     </AccordionItem>
 
                     <AccordionItem value="faq-2" className="border-gray-200 border-b-2 rounded-none p-6 mb-6 font-poppins">
-                        <AccordionTrigger className="text-dark text-lg sm:text-xl text-green-600">What is the minimum amount required to start investing?</AccordionTrigger>
+                        <AccordionTrigger className="text-lg sm:text-xl text-green-600">What is the minimum amount required to start investing?</AccordionTrigger>
                         <AccordionContent className="p-0 text-[#094D26]">
                             <p>
                                 The minimum investment depends on the product you choose. 
@@ -60,7 +60,7 @@ const InvestmentFaq = () => {
                     </AccordionItem>
 
                     <AccordionItem value="faq-3" className="border-gray-200 border-b-2 rounded-none p-6 mb-6 font-poppins">
-                        <AccordionTrigger className="text-dark text-lg sm:text-xl text-green-600">
+                        <AccordionTrigger className="text-lg sm:text-xl text-green-600">
                             What is the difference between NHF and MoFi Housing Fund?
                         </AccordionTrigger>
                         <AccordionContent className="p-0 text-[#094D26]">
@@ -78,23 +78,26 @@ const InvestmentFaq = () => {
                     </AccordionItem>
 
                     <AccordionItem value="faq-4" className="border-gray-200 border-b-2 rounded-none p-6 mb-6 font-poppins">
-                        <AccordionTrigger className="text-dark text-lg sm:text-xl text-green-600">
+                        <AccordionTrigger className="text-lg sm:text-xl text-green-600">
                             What are the active housing projects I can invest in?
                         </AccordionTrigger>
                         <AccordionContent className="p-0 text-[#094D26]">
                             <p>
                                 MegaCoop currently has several active housing projects 
-                                including Egando Estate in Lekki (80 units), Adonai 
+                                including Igando Estate in Lekki (80 units), Adonai 
                                 Estate in Ketu (50 units), and Adewale Estate which 
                                 is currently in the finishing stage. These projects 
                                 offer medium-risk investment opportunities with returns 
-                                of 15–18% per annum over an 18–36 month period.
+                                of 15–18% per annum over an 18–36 month period. <br/>
+                                Active Investment Projects are always uploaded on the platform, 
+                                so you can check the Investment section on your dashboard for the 
+                                latest opportunities.
                             </p>
                         </AccordionContent>
                     </AccordionItem>
 
                     <AccordionItem value="faq-5" className="border-gray-200 border-b-2 rounded-none p-6 mb-6 font-poppins">
-                        <AccordionTrigger className="text-dark text-lg sm:text-xl text-green-600">
+                        <AccordionTrigger className="text-lg sm:text-xl text-green-600">
                             How does the Housing Contribution Calculator work?
                         </AccordionTrigger>
                         <AccordionContent className="p-0 text-[#094D26]">

@@ -1,39 +1,40 @@
 import { motion } from "framer-motion";
-import { useState } from "react";
-import { Button } from "./ui/button";
-import { Input } from "./ui/input";
+// import { useState } from "react";
+import ContactImage from "../assets/lady-gadget-car.webp"
+// import { Button } from "./ui/button";
+// import { Input } from "./ui/input";
 
 export default function ContactSection() {
-  const [email, setEmail] = useState("");
-  const [loading, setLoading] = useState(false);
-  const [message, setMessage] = useState("");
+  // const [email, setEmail] = useState("");
+  // const [loading, setLoading] = useState(false);
+  // const [message, setMessage] = useState("");
 
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setLoading(true);
-    setMessage("");
+  // const handleSubmit = async (e: React.FormEvent) => {
+  //   e.preventDefault();
+  //   setLoading(true);
+  //   setMessage("");
 
-    try {
-      const res = await fetch("https://your-api.com/newsletter/subscribe", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ email }),
-      });
+    // try {
+    //   const res = await fetch("https://your-api.com/newsletter/subscribe", {
+    //     method: "POST",
+    //     headers: {
+    //       "Content-Type": "application/json",
+    //     },
+    //     body: JSON.stringify({ email }),
+    //   });
 
-      if (!res.ok) throw new Error("Failed to subscribe");
+    //   if (!res.ok) throw new Error("Failed to subscribe");
 
-      setMessage("✅ Subscription successful!");
-      setEmail("");
-    } catch (err) {
-      setMessage(
-        `❌ Something went wrong. Please try again. ${(err as Error).message}`
-      );
-    } finally {
-      setLoading(false);
-    }
-  };
+    //   setMessage("✅ Subscription successful!");
+    //   setEmail("");
+    // } catch (err) {
+    //   setMessage(
+    //     `❌ Something went wrong. Please try again. ${(err as Error).message}`
+    //   );
+    // } finally {
+    //   setLoading(false);
+    // }
+  // };
 
   return (
     <section className="w-full bg-[#F9FAFB] relative py-16 pb-0 font-poppins">
@@ -58,9 +59,9 @@ export default function ContactSection() {
         <div>
           <h3 className="font-semibold text-lg text-black">Email Address</h3>
           <div className="w-6 h-0.5 bg-black my-2" />
-          <p className="font-semibold text-black">info@megacoop.com</p>
+          <p className="font-semibold text-black">info@megacoop.org</p>
           <p className="text-gray-600 text-sm mt-2">
-            Assistance hours: <br /> Monday – Friday 6 am to 8 pm EST
+            Assistance hours: <br /> Monday – Friday 8am to 6pm EST
           </p>
         </div>
 
@@ -70,7 +71,7 @@ export default function ContactSection() {
           <div className="w-6 h-0.5 bg-black my-2" />
           <p className="font-semibold text-black">08076743972</p>
           <p className="text-gray-600 text-sm mt-2">
-            Assistance hours: <br /> Monday – Friday 6 am to 8 pm EST
+            Assistance hours: <br /> Monday – Friday 8am to 6pm EST
           </p>
         </div>
       </motion.div>
@@ -81,23 +82,33 @@ export default function ContactSection() {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: 0.2 }}
         viewport={{ once: true }}
-        className="bg-[#14AB55] py-16 px-4"
+        className="bg-[#14AB55] py-16 px-4 md:py-0 md:px-0 "
       >
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
           {/* Text */}
-          <div>
+          <div className="px-4">
             <h2 className="text-2xl md:text-3xl font-extrabold text-white mb-4">
-              Subscribe to our Newsletter
+              {/* Subscribe to our Newsletter */}
+              Join Now
             </h2>
             <p className="text-white/90 max-w-lg">
-              Subscribe for Updates: Stay informed about the latest investor
-              updates, financial results, and announcements by subscribing to
-              our newsletter.
+              Create your account today to access member benefits, 
+              track your investments, and stay updated with all the 
+              latest financial insights and announcements.
             </p>
           </div>
 
+          {/* Image */}
+          <div className="sm:flex sm:justify-end">
+            <img
+              src={ContactImage}
+              alt="Newsletter Illustration"
+              className="w-full mx-auto md:max-w-md md:mx-0 "
+            />
+          </div>
+
           {/* Input Form */}
-          <form
+          {/* <form
             onSubmit={handleSubmit}
             className="flex rounded-2xl overflow-hidden w-full max-w-md mx-auto md:mx-0 "
           >
@@ -116,12 +127,12 @@ export default function ContactSection() {
             >
               {loading ? "..." : "Subscribe"}
             </Button>
-          </form>
+          </form> */}
 
           {/* Message */}
-          {message && (
+          {/* {message && (
             <p className="text-white mt-4 text-sm font-medium">{message}</p>
-          )}
+          )} */}
         </div>
       </motion.div>
     </section>

@@ -45,8 +45,8 @@ export default function InvestServices() {
                         transition={{ delay: 0.4 }}
                         className="w-1/2 max-w-lg text-gray-600 text-xs md:text-base mb-6 z-10"
                       >
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Flexible savings and affordable loan solutions designed to help our 
+                        members achieve financial stability and growth.
                       </motion.p>
                       
           <img

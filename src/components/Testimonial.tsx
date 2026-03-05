@@ -30,9 +30,9 @@ const testimonies = [
             rating: 5
         },
         {
-            testimony: "I love how I can track my savings and get reminders. The app is easy to use, even for someone like me who's not very techy. Plus, their customer support is friendly and quick",
-            userName: "Joy E.",
-            occupation: "Student, Ogun",
+            testimony: "Joining Megacoop Cooperative has been one of the best financial decisions I’ve made. The savings plan is flexible, and I was able to access a soft loan without stress. The process was transparent, and the team was very supportive throughout",
+            userName: "Adebayo T.",
+            occupation: "Civil Servant, Ogun",
             image: "img1",
             rating: 4
         },
@@ -61,7 +61,7 @@ const Testimonials = () => {
                             <div className="flex items-center gap-4 mt-4">
                                 <Avatar>
                                     <AvatarImage src={item.image} alt={`Photo of ${item.userName}`} loading="lazy" />
-                                    <AvatarFallback>AU</AvatarFallback>
+                                    <AvatarFallback>{item.userName.split(' ').map(n => n[0]).join('')}</AvatarFallback>
                                 </Avatar>
                                 <div>
                                     <p className="text-sm">{item.userName} - {item.occupation}</p>

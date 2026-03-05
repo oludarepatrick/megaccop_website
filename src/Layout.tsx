@@ -1,4 +1,4 @@
-import AskMegaBot from "./components/AskMegaBot";
+import AskMegaBot from "./components/AIChatBot";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import ScrollToTop from "./components/ScrollToTop";
