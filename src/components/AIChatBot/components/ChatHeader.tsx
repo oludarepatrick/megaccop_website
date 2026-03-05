@@ -19,7 +19,7 @@ export function ChatHeader({onNewChat, onClose} : ChatHeaderProps) {
                         </TooltipTrigger>
                         <TooltipContent side="bottom">Open Sidebar</TooltipContent>
                     </Tooltip>
-                    <span className="font-semibold text-grey-800 font-poppins text-sm">RukaYat</span>
+                    <span className="font-semibold text-grey-800 font-poppins text-sm">Jane</span>
 
                 </div>
 

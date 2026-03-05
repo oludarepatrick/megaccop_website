@@ -41,7 +41,7 @@ export function ChatDialog({
             {/* Panel */}
 
             <div role="dialog" aria-label="Chat with Jane" className={`
-                fixed bottom-24 right-8 z-50 w-[370px] max-w-[calc(100vw-2rem)] transition-all
+                fixed bottom-8 right-3 sm:right-8 z-50 w-[370px] max-w-[calc(100vw-2rem)] max-h-[calc(100vh-2rem)] overflow-y-auto transition-all
                 duration-300 ease-in-out ${
                     isOpen ? "opacity-100 translate-y-0 pointer-events-auto" :
                     "opacity-0 translate-y-6 pointer-events-none"
@@ -49,7 +49,7 @@ export function ChatDialog({
                 style={{transformOrigin: "bottom right"}}
             >
                 <div className="rounded-2xl overflow-hidden shadow-2xl border border-gray-200/60 bg-whitebg flex flex-col"
-                 style={{height: "520px"}}
+                 style={{height: "500px"}}
                 >
                     <ChatHeader onNewChat={onNewChat} onClose={onClose} />
 
