@@ -92,14 +92,14 @@ const Navbar = () => {
         </ul>
 
         <div className="hidden lg:flex items-center gap-4">
-          <Link to="/signup">
+          <a href="https://new.megacoop.org/app/register/mega" target="_blank" rel="noopener noreferrer">
             <Button variant="outline" className="bg-transparent rounded-full border-megagreen text-whitebg font-normal">
               Sign Up
             </Button>
-          </Link>
-          <Link to="/login">
+          </a>
+          <a href="https://new.megacoop.org/app/auth/login" target="_blank" rel="noopener noreferrer">
             <Button className="bg-megagreen rounded-full">Login</Button>
-          </Link>
+          </a>
         </div>
       </nav>
 
