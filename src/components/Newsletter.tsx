@@ -61,7 +61,7 @@ export default function ContactSection() {
           <div className="w-6 h-0.5 bg-black my-2" />
           <p className="font-semibold text-black">info@megacoop.org</p>
           <p className="text-gray-600 text-sm mt-2">
-            Assistance hours: <br /> Monday – Friday 8am to 6pm EST
+            Assistance hours: <br /> Monday – Friday 9am to 5pm EST
           </p>
         </div>
 
@@ -71,7 +71,7 @@ export default function ContactSection() {
           <div className="w-6 h-0.5 bg-black my-2" />
           <p className="font-semibold text-black">08076743972</p>
           <p className="text-gray-600 text-sm mt-2">
-            Assistance hours: <br /> Monday – Friday 8am to 6pm EST
+            Assistance hours: <br /> Monday – Friday 9am to 5pm EST
           </p>
         </div>
       </motion.div>

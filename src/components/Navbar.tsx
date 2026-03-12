@@ -102,6 +102,7 @@ const Navbar = () => {
           </a>
         </div>
       </nav>
+      
 
       {/* Mobile menu with AnimatePresence */}
       <AnimatePresence>
