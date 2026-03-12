@@ -15,7 +15,7 @@ export const teamMembers: TeamMember[] = [
     {
         id: "ernest-mbanefo",
         name: "Ernest Mbanefo",
-        role: "MegaCoop Board",
+        role: "President, MegaCoop Board",
         image: member3,
         shortBio: "Seasoned executive with over 38 years of cross-sector experience spanning civil infrastructure, energy, real estate, and cooperative finance.",
         bio: `Ernest Mbanefo is a seasoned executive with over 38 years of cross-sector
@@ -43,7 +43,7 @@ export const teamMembers: TeamMember[] = [
     {
         id: "olu-awogbemila",
         name: "Olu Awogbemila",
-        role: "Strategic Advisor, MegaCoop Board",
+        role: "Vice President, MegaCoop Board",
         image: member2,
         shortBio: "Strategic communications expert with over two decades in financial services and entrepreneurship, bringing extensive experience in corporate governance and organizational leadership.",
         bio: `Olu Awogbemila brings a wealth of experience in strategic communications,
@@ -70,11 +70,11 @@ export const teamMembers: TeamMember[] = [
         and Development (NITAD), and an alumnus of Lagos Business School (SMP 10), ensuring that his expertise remains
         current and relevant to today's dynamic cooperative and business landscape.`
     },
-    
+
     {
         id: "agnes-oludara",
         name: "Agnes Olukemi Oludara",
-        role: "Legal Advisor & Strategic Counsel | MegaCoop Board",
+        role: "Legal Director, MegaCoop Board",
         image: member1,
         shortBio: "Distinguished legal practitioner and Principal Partner at Fagbola Eboda & Co., with nearly two decades of experience in commercial law and cooperative governance.",
         bio: `Agnes Olukemi Oludara is a distinguished legal practitioner and the Principal
