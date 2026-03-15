@@ -46,7 +46,7 @@ export function ChatInputArea({ input, isTyping, onInputChange, onSend, onKeyDow
 
             </div>
             <p className="text-center text-[10px] text-gray-400 font-poppins mt-2.5">
-                Understand that Jane Is Limited!
+                Understand that MegaCoop Is Limited!
             </p>
 
         </div>

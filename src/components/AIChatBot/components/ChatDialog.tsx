@@ -40,7 +40,7 @@ export function ChatDialog({
 
             {/* Panel */}
 
-            <div role="dialog" aria-label="Chat with Jane" className={`
+            <div role="dialog" aria-label="Chat with MegaCoop" className={`
                 fixed bottom-8 right-3 sm:right-8 z-50 w-[370px] max-w-[calc(100vw-2rem)] max-h-[calc(100vh-2rem)] overflow-y-auto transition-all
                 duration-300 ease-in-out ${
                     isOpen ? "opacity-100 translate-y-0 pointer-events-auto" :
