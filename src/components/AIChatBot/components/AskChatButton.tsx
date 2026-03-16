@@ -12,7 +12,7 @@ export const AskChatButton = ({ onClick, isOpen }: AskChatButtonProps) => {
             variant="outline"
             onClick={onClick}
             aria-expanded={isOpen}
-            aria-label={isOpen ? "Close chat" : "Open chat with Jane"}
+            aria-label={isOpen ? "Close chat" : "Open chat with MegaCoop"}
             className={`fixed bottom-8  right-8 z-50 border-white font-normal
                 bg-megagreen hover:bg-green-600 text-whitebg hover:text-whitebg 
                 font-poppins p-6 rounded-full shadow-lg hover:shadow-xl transition-all duration-200
@@ -25,12 +25,12 @@ export const AskChatButton = ({ onClick, isOpen }: AskChatButtonProps) => {
                         <path d="M1 1L13 13M13 1L1 13" stroke="white" strokeWidth="2" strokeLinecap="round" />
                     </svg>
                 ) : (
-                    // show Ask Jane with logo when chat is closed
+                    // show Ask MegaCoop with logo when chat is closed
                     <span className="flex items-center gap-2">
                         <img src="/megacoop-logo-white.svg" alt="" className="w-5" />
                         Ask
                         <span className="hidden md:inline -ml-1">
-                            Jane
+                            MegaCoop
                         </span>
                     </span>
                 )}

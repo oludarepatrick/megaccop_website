@@ -22,7 +22,7 @@ export function ChatMessages({ messages, messagesEndRef, isTyping }: ChatMessage
                     `}>
                         {msg.role === "assistant" && (
                             <Avatar className="h-6 w-6 shrink-0 mb-0.5 border border-gray-100">
-                                <AvatarImage src="/megacoop-green-icon.svg" alt="Jane" />
+                                <AvatarImage src="/megacoop-green-icon.svg" alt="MegaCoop" />
                                 <AvatarFallback className="bg-megagreen/10 text-megagreen text-[10px] font-semibold">J</AvatarFallback>
                             </Avatar>
                         )}
@@ -50,7 +50,7 @@ function TypingDots() {
     return (
         <div className="flex items-end gap-2">
             <Avatar className="h-6 w-6 shrink-0 border border-gray-100">
-                <AvatarImage src="/megacoop-logo.svg" alt="Jane" />
+                <AvatarImage src="/megacoop-logo.svg" alt="MegaCoop" />
                 <AvatarFallback className="bg-megagreen/10 text-megagreen text-[10px] font-semibold">J</AvatarFallback>
             </Avatar>
             <div className="bg-white border border-gray-100 shadow-sm px-4 py-3 rounded-2xl rounded-bl-sm flex items-center gap-1">
