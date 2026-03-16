@@ -129,14 +129,14 @@ const Navbar = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2, duration: 0.3 }}
             >
-              <Link to="/signup" onClick={handleMenuItemClick}>
+              <a href="https://new.megacoop.org/app/register/mega" target="_blank" rel="noopener noreferrer">
                 <Button variant="outline" className="border-whitebg rounded-full px-8">
                   Sign Up
                 </Button>
-              </Link>
-              <Link to="/login" onClick={handleMenuItemClick}>
+              </a>
+              <a href="https://new.megacoop.org/app/auth/login" target="_blank" rel="noopener noreferrer">
                 <Button className="rounded-full px-10">Login</Button>
-              </Link>
+              </a>
             </motion.div>
           </motion.div>
         )}
