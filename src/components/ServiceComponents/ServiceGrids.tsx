@@ -56,8 +56,8 @@ const services = [
   },
   {
     id: 8,
-    title: "Use the App in Your Preferred Language",
-    description: "Navigate the app in English, Yoruba, or Igbo",
+    title: "Shop more and Worry Less about Payment",
+    description: "Visit our marketplace to explore products and buy on credit",
     href: "/services/language",
   },
   {
