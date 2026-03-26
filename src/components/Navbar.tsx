@@ -92,18 +92,17 @@ const Navbar = () => {
         </ul>
 
         <div className="hidden lg:flex items-center gap-4">
-          <a href="https://new.megacoop.org/app/register/mega" target="_blank" rel="noopener noreferrer">
+          <a href="https://user.megacoop.org/login" target="_blank" rel="noopener noreferrer">
             <Button variant="outline" className="bg-transparent rounded-full border-megagreen text-whitebg font-normal">
               Sign Up
             </Button>
           </a>
-          <a href="https://new.megacoop.org/app/auth/login" target="_blank" rel="noopener noreferrer">
+          <a href="https://user.megacoop.org/signup" target="_blank" rel="noopener noreferrer">
             <Button className="bg-megagreen rounded-full">Login</Button>
           </a>
         </div>
       </nav>
       
-
       {/* Mobile menu with AnimatePresence */}
       <AnimatePresence>
         {menuOpen && (
