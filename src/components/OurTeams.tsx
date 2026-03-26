@@ -8,7 +8,7 @@ import { useNavigate } from "react-router-dom";
          <section className="container mx-auto px-8 pt-10">
             <div className=" mx-auto text-center flex flex-col justify-center items-center">
                 <Highlight text="Our Team" /> 
-                <h2 className="md:text-[40px] text-3xl leading-[1.2] font-medium">
+                <h2 className="md:text-[40px] text-3xl font-poppins leading-[1.2] font-medium">
                     Meet Our Dedicated Team
                 </h2>
             </div>

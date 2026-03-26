@@ -242,10 +242,7 @@ export default function HousingContributionCalculator(): JSX.Element {
     console.log("isFormValid", isFormValid);
     console.log("calculation", calculation);
     if (!isFormValid || !calculation) return;
-    // if ((calculation as any).error) {
-    //   setAlertMessage((calculation as any).error);
-    //   return;
-    // }
+   
     if (("error" in calculation)) {
       setAlertMessage(calculation.error ?? "An error occurred");
       return;
@@ -275,13 +272,13 @@ export default function HousingContributionCalculator(): JSX.Element {
   return (
     <section className="max-w-6xl mx-auto py-12 px-4 relative">
       {/* Header */}
-      <div className="flex flex-col items-center text-center mb-8">
+      <div className="flex flex-col items-center text-center font-poppins mb-8">
         <img src={calculatorImage} alt="calculator" className="w-56 md:w-72 mb-6" />
         <h2 className="text-3xl md:text-4xl font-extrabold text-emerald-600">Housing Contribution Calculator</h2>
         <p className="text-muted-foreground mt-2">Calculate your contributions</p>
       </div>
 
-      <form onSubmit={handleCalculate} className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-3xl mx-auto">
+      <form onSubmit={handleCalculate} className="grid grid-cols-1 font-poppins md:grid-cols-2 gap-6 max-w-3xl mx-auto">
         {/* Monthly Income */}
         <div>
           <Label className="text-sm text-emerald-600">Monthly Income (₦)</Label>

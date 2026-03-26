@@ -47,7 +47,7 @@ const Navbar = () => {
     <header className="container mx-auto sticky top-0 left-0 w-full z-50 mt-6 px-8">
       <nav
         aria-label="Global-Navigation"
-        className="max-w-[1280px] mx-auto bg-black flex items-center justify-between lg:px-16 px-4 gap-4 rounded-full relative"
+        className="max-w-[1280px] mx-auto bg-black font-inter flex items-center justify-between lg:px-16 px-4 gap-4 rounded-full relative"
       >
         <h1 className="sr-only">MegaCoop</h1>
         <Link to="/" className="flex items-center">
@@ -114,7 +114,7 @@ const Navbar = () => {
             exit="closed"
           >
             <motion.ul 
-              className="list-none flex flex-col items-center gap-4 p-4"
+              className="list-none flex flex-col font-inter items-center gap-4 p-4"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.1, duration: 0.3 }}

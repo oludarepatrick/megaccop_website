@@ -113,7 +113,7 @@ export default function ServiceGrid() {
               ✦ Our Services
             </span>
           </div>
-          <h2 className="text-4xl lg:w-[55%] font-bold ">
+          <h2 className="text-4xl lg:w-[55%] font-medium ">
             Financial Solutions That Fit Your Everyday Life
           </h2>
         </motion.div>
@@ -148,7 +148,7 @@ export default function ServiceGrid() {
                   initial={{ opacity: 0, y: 10 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.4, delay: 0.4 }}
-                  className="text-lg font-semibold mb-1 text-balance"
+                  className="text-lg font-medium mb-1 text-balance"
                 >
                   {service.title}
                 </motion.h3>

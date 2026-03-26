@@ -40,7 +40,7 @@ import { Progress } from "../ui/progress";
 export default function InvestServices() {
     return (
         <section
-            className="relative flex flex-col items-center justify-center text-center px-4 py-20 md:py-16 mt-[-20px] bg-cover bg-center overflow-hidden gap-10 z-1"
+            className="relative flex flex-col items-center justify-center font-poppins text-center px-4 py-20 md:py-16 mt-[-20px] bg-cover bg-center overflow-hidden gap-10 z-1"
             style={{ backgroundImage: `url(${BackgroundImage})` }}
         >
             {/** bottom absolute image */}
@@ -78,7 +78,7 @@ export default function InvestServices() {
                 </h4>
 
                 <motion.div
-                    className="   flex flex-col md:flex-row items-start justify-between w-full p-6 md:p-3 mb-10 gap-8 text-left"
+                    className="   flex flex-col md:flex-row items-start justify-between font-inter w-full p-6 md:p-3 mb-10 gap-8 text-left"
                     initial={{ opacity: 0, y: 30 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.6 }}
@@ -93,11 +93,10 @@ export default function InvestServices() {
                     </div>
 
                     {/* Right Content */}
-                    {/* <div className="flex flex-col flex-1 space-y-5 border border-red-500"> */}
                     <div className="grid flex-1 grid-cols-1 md:grid-cols-2 gap-6">
                         {/* Key Metrics */}
                         <div className="flex flex-col flex-wrap  gap-2 text-sm">
-                            <p className="text-green-600 text-sm md:text-base">
+                            <p className="text-green-600 text-sm font-medium">
                                 Grow your wealth with diversified pooled investments.
                             </p>
 
@@ -201,7 +200,7 @@ export default function InvestServices() {
                 </h4>
 
             <motion.div
-                    className="relative flex flex-col md:flex-row items-start justify-between w-full p-6 md:p-3 mb-10 gap-8 text-left"
+                    className="relative flex flex-col md:flex-row items-start justify-between font-inter w-full p-6 md:p-3 mb-10 gap-8 text-left"
                     initial={{ opacity: 0, y: 30 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.6 }}
@@ -220,7 +219,7 @@ export default function InvestServices() {
                     <div className="grid flex-1 grid-cols-1 md:grid-cols-2 gap-6">
                     <div className="space-y-4">
                         <div className="flex items-center justify-between  w-full">
-                                <span className="text-sm text-gray-800 font-bold">Housing Project Investments</span> 
+                                <span className="text-sm text-gray-800 font-poppins font-bold">Housing Project Investments</span> 
                                 <div className="flex items-center bg-[#F8C060] rounded-full px-4 py-1 w-28 justify-center">
                                     <span><Banknote className="w-4 h-4 mr-1" /></span>
                                     <p className="text-gray-600 text-xs font-medium">
@@ -300,7 +299,7 @@ export default function InvestServices() {
                     {/* Right Section */}
                     <div className="space-y-4">
                         <div className="flex items-center justify-between  w-full">
-                                <span className="text-sm text-gray-800 font-bold">Housing Fund Programs</span> 
+                                <span className="text-sm text-gray-800 font-poppins font-bold">Housing Fund Programs</span> 
                                 <div className="flex items-center bg-[#F8C060] rounded-full px-4 py-1 w-28 justify-center">
                                     <span><Banknote className="w-4 h-4 mr-1 text-green-600" /></span>
                                     <p className="text-gray-600 text-xs font-medium">
