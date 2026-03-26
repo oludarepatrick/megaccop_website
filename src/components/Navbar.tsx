@@ -128,12 +128,12 @@ const Navbar = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2, duration: 0.3 }}
             >
-              <a href="https://new.megacoop.org/app/register/mega" target="_blank" rel="noopener noreferrer">
+              <a href="https://user.megacoop.org/login" target="_blank" rel="noopener noreferrer">
                 <Button variant="outline" className="border-whitebg rounded-full px-8">
                   Sign Up
                 </Button>
               </a>
-              <a href="https://new.megacoop.org/app/auth/login" target="_blank" rel="noopener noreferrer">
+              <a href="https://user.megacoop.org/signup" target="_blank" rel="noopener noreferrer">
                 <Button className="rounded-full px-10">Login</Button>
               </a>
             </motion.div>
