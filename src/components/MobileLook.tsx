@@ -12,9 +12,10 @@ import Highlight from "./Highlight"
                         All Transactions Easily on Your Device
                     </h2>
                     <p className="my-4 text-lg">
-                        Paying for anything is as easy as a tap. With Megacoop, 
-                        you can effortlessly handle a wide range of transactions,
-                        from bill payments and barcode scans to e-commerce
+                        Managing your future is as easy as a tap. 
+                        Megacoop gives you seamless access to investment portfolios, 
+                        buy-on-credit features, target savings, NHA loans, and instant 
+                        business loans at significant rates.
                     </p>
                     <Button className="bg-megagreen text-sm font-medium font-poppins rounded-full">Get Started</Button>
                 </header>
