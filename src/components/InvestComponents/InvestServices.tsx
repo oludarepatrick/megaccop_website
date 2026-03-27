@@ -16,7 +16,7 @@ const fadeInUp = {
 export default function InvestServices() {
   return (
       <section
-          className="relative flex flex-col items-center justify-center text-center px-4 py-20 md:py-28  bg-cover bg-center object-cover overflow-hidden "
+          className="relative flex flex-col items-center justify-center font-poppins text-center px-4 py-20 md:py-28  bg-cover bg-center object-cover overflow-hidden "
             style={{ backgroundImage: `url(${BackgroundImage})` }}
       >
           <motion.div

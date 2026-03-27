@@ -33,7 +33,7 @@ const memberBenefits = [
     return (
         <section className="container mx-auto px-8 pb-16">
             <div className="max-w-[1280px] mx-auto flex flex-col items-center justify-between gap-8 lg:flex-row ">
-                <header className="w-full max-w-[620px] mx-auto text-poppins  flex flex-col items-center lg:items-start">
+                <header className="w-full max-w-[620px] mx-auto font-poppins  flex flex-col items-center lg:items-start">
                     <Highlight text="Our Member Benefits" />
                     <h2 className="md:text-[40px] text-3xl leading-[1.2] font-medium lg:pr-16">
                         What We Offer
@@ -52,7 +52,7 @@ const memberBenefits = [
                                 </figure>
 
                                 <div className="flex-1 px-2 space-y-1">
-                                        <h3 className="text-2xl font-manrope font-semibold">{list.title}</h3>
+                                        <h3 className="md:text-2xl text-xl font-manrope font-semibold">{list.title}</h3>
                                         <p className="text-footertext font-inter">{list.desc}</p>
                                 </div>
                             </li>

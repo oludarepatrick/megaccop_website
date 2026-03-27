@@ -32,7 +32,7 @@ const InvestmentHeroSection: React.FC = () => {
   };
 
   return (
-    <section className="relative flex flex-col items-center justify-center text-center px-4 py-20 md:py-28 bg-white container mx-auto">
+    <section className="relative flex flex-col items-center font-poppins justify-center text-center px-4 py-20 md:py-28 bg-white container mx-auto">
       {/* Floating background shapes */}
       <motion.img
         src={shapevertical}
@@ -40,14 +40,14 @@ const InvestmentHeroSection: React.FC = () => {
         className="absolute left-2 top-10 "
         animate={floatAnimation.animate}
       />
-      
+
       <motion.img
         src={shapecircle}
         alt="shape-left-middle"
         className="absolute left-10 top-1/3 w-4"
         animate={floatAnimation.animate}
       />
-      
+
       <motion.img
         src={shapehorizontal}
         alt="shape-left-middle"
@@ -87,7 +87,7 @@ const InvestmentHeroSection: React.FC = () => {
         className="flex items-center gap-2 bg-gray-100 text-gray-600 px-4 py-1.5 rounded-full shadow-sm mb-6 text-sm md:text-base z-10"
       >
         <span className="inline-flex items-center justify-center w-8 h-8 bg-gray-300 rounded-full">
-            <img src={icon1} alt="Investment Icon" className="w-8 h-8" />
+          <img src={icon1} alt="Investment Icon" className="w-8 h-8" />
         </span>
         Smart Finance, Smart Living
       </motion.div>
@@ -103,7 +103,7 @@ const InvestmentHeroSection: React.FC = () => {
         <span className="text-green-600">We make it easy for</span>{" "}
         <br className="hidden md:block" />
         <span className="text-green-600">everyone to</span>{" "}
-        <span className="text-orange-500">invest</span>
+        <span className="text-[#EE9105]">invest</span>
       </motion.h1>
 
       {/* Description */}
@@ -126,33 +126,24 @@ const InvestmentHeroSection: React.FC = () => {
         animate="visible"
         transition={{ delay: 0.6 }}
       >
-        <Button className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-6 rounded-full text-base md:text-lg font-medium shadow-lg transition-all">
+        <Button className="bg-[#EE9105] hover:bg-[#ef8103] text-white px-8 py-6 rounded-full text-base md:text-lg font-medium shadow-lg transition-all">
           Invest with us today
         </Button>
       </motion.div>
 
-      {/* Floating illustration */}
-      {/* <motion.img
+      <motion.img
         src={heroimage}
         alt="investment illustration"
-        className="absolute right-6 md:right-20 top-10 md:top-25 w-44 md:w-72 z-0"
+        className="
+          absolute 
+          md:right-20 md:top-2 md:w-82 
+          right-0 top-0 w-full h-full 
+          object-cover md:object-contain 
+          opacity-30 md:opacity-100 
+          z-0
+        "
         animate={floatAnimation.animate}
-      /> */}
-          {/* Floating illustration */}
-<motion.img
-  src={heroimage}
-  alt="investment illustration"
-  className="
-    absolute 
-    md:right-20 md:top-2 md:w-82 
-    right-0 top-0 w-full h-full 
-    object-cover md:object-contain 
-    opacity-30 md:opacity-100 
-    z-0
-  "
-  animate={floatAnimation.animate}
-/>
-
+      />
     </section>
   );
 };

@@ -5,7 +5,7 @@ import Highlight from "./Highlight"
     return (
         <section className="container mx-auto px-8 pb-16">
             <div className="max-w-[1280px] mx-auto flex flex-col items-center justify-between gap-8 lg:flex-row ">
-                <header className="w-full max-w-[620px] mx-auto text-poppins text-center lg:text-left flex flex-col items-center lg:items-start">
+                <header className="w-full max-w-[620px] mx-auto font-poppins text-center lg:text-left flex flex-col items-center lg:items-start">
                     <Highlight text="Anywhere, Anytime with Megacoop" textClassName="text-xs" />
                     <h2 className="md:text-[40px] text-3xl leading-[1.2] font-medium lg:pr-16">
                         Who We Are
