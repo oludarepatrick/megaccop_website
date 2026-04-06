@@ -166,20 +166,7 @@ export default function InvestServices() {
                                     </p>
                                 </div> 
                             </div>
-                            {/* <div className="flex flex-wrap gap-2 text-xs md:text-sm ">
-                                <span className="bg-green-100 text-green-700 px-3 py-1 rounded-full">
-                                    Growth
-                                </span>
-                                <span className="bg-yellow-100 text-yellow-700 px-3 py-1 rounded-full">
-                                    Yield
-                                </span>
-                                <span className="bg-blue-100 text-blue-700 px-3 py-1 rounded-full">
-                                    Medium
-                                </span>
-                                <span className="bg-orange-100 text-orange-700 px-3 py-1 rounded-full">
-                                    Balanced growth & safety
-                                </span>
-                            </div> */}
+                            
                             <InvestmentPools />
                             <Button className="bg-green-600 hover:bg-green-700 text-white rounded-full px-8 py-5 mt-4 w-2/3 mx-auto">
                               <Check className="w-4 h-4 " />   Apply now
