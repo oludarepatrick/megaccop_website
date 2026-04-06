@@ -67,11 +67,11 @@ export default function ContactSection() {
 
         {/* Phone */}
         <div>
-          <h3 className="font-semibold text-lg text-black">Number</h3>
+          <h3 className="font-semibold text-lg text-black">Contact Address</h3>
           <div className="w-6 h-0.5 bg-black my-2" />
           <p className="font-semibold text-black">08076743972</p>
           <p className="text-gray-600 text-sm mt-2">
-            Assistance hours: <br /> Monday – Friday 9am to 5pm EST
+            Office address: <br />9, Orise Street, Ikeja, Lagos, Nigeria.
           </p>
         </div>
       </motion.div>
